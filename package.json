@@ -16,7 +16,7 @@
 	},
 	"keywords": ["decap-cms", "sveltia-cms", "github", "gitlab", "auth"],
 	"author": "OCAD University <idrc@ocadu.ca>",
-	"license": "MIT",
+	"license": "BSD-3-Clause",
 	"dependencies": {
 		"cookie-parser": "^1.4.6",
 		"dotenv": "^16.4.5",

@@ -1,5 +1,9 @@
 # IDRC CMS Authenticator
 
+[![BSD 3-Clause license](https://badgen.net/github/license/inclusive-design/idrc-cms-authenticator)](https://github.com/inclusive-design/idrc-cms-authenticator/blob/main/LICENSE.md)
+[![Latest release](https://badgen.net/github/release/inclusive-design/idrc-cms-authenticator)](https://github.com/inclusive-design/idrc-cms-authenticator/releases/latest)
+[![codecov](https://codecov.io/gh/inclusive-design/idrc-cms-authenticator/graph/badge.svg?token=7DVX7LF4BH)](https://codecov.io/gh/inclusive-design/idrc-cms-authenticator)
+
 A simple [Express](https://expressjs.com/) application which allows [Sveltia CMS](https://github.com/sveltia/sveltia-cms) or [Decap CMS](https://decapcms.org) to authenticate with [GitHub](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps) or [GitLab](https://docs.gitlab.com/ee/api/oauth2.html#authorization-code-flow).
 
 Based on [netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-cms-github-oauth-provider) and [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth).
