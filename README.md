@@ -12,27 +12,12 @@ Based on [netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-c
 2. Configure environment variables for the application in a `.env` file:
 
 ```bash
-AUTH_TARGET=_self
-NODE_ENV=production
+# Domain patterns for CMS installations using the IDRC CMS Authenticator
+ALLOWED_DOMAINS=example.com,*.example.com
 # GitHub or GitLab OAuth application client ID
 OAUTH_CLIENT_ID=""
 # GitHub or GitLab OAuth application client secret
 OAUTH_CLIENT_SECRET=""
-# Domain patterns for CMS installations using the IDRC CMS Authenticator
-ORIGINS=example.com,*.example.com
-PORT=3000
-# A full URL to the /callback route of your deployed IDRC CMS Authenticator.
-# This will also be configured as the authorization callback URL in your GitHub or GitLab OAuth application.
-REDIRECT_URL=https://auth.example.com/callback
-```
-
-GitLab requires additional information as follows:
-
-```bash
-OAUTH_PROVIDER=gitlab
-SCOPES=api
-OAUTH_AUTHORIZE_PATH=/oauth/authorize
-OAUTH_TOKEN_PATH=/oauth/token
 ```
 
 ## Serving locally
