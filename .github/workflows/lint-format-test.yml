@@ -1,4 +1,4 @@
-name: Lint and format files
+name: Lint, format and test files
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  lint-format:
-    name: Lint and format files
+  lint-format-test:
+    name: Lint, format and test files
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,3 +22,4 @@ jobs:
           npm ci
           npm run lint
           npm run format
+          npm run test
