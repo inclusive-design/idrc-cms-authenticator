@@ -1,3 +1,5 @@
+const { randomUUID } = require("node:crypto");
+
 /**
  * List of supported OAuth providers.
  */
@@ -90,7 +92,7 @@ const authMiddleware = () => {
 		}
 
 		// Generate a random string for CSRF protection
-		const csrfToken = globalThis.crypto.randomUUID().replaceAll("-", "");
+		const csrfToken = randomUUID().replaceAll("-", "");
 		let authURL = "";
 
 		if (!OAUTH_CLIENT_ID || !OAUTH_CLIENT_SECRET) {
