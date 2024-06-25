@@ -2,7 +2,7 @@
 
 A simple [Express](https://expressjs.com/) application which allows [Sveltia CMS](https://github.com/sveltia/sveltia-cms) or [Decap CMS](https://decapcms.org) to authenticate with [GitHub](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps) or [GitLab](https://docs.gitlab.com/ee/api/oauth2.html#authorization-code-flow).
 
-Based on [netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-cms-github-oauth-provider).
+Based on [netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-cms-github-oauth-provider) and [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth).
 
 ## Usage
 
