@@ -10,7 +10,7 @@ Based on [netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-c
 
 ## Usage
 
-## Configuration
+### Configuration
 
 1. Create an OAuth application on [GitHub](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app) or [GitLab](https://docs.gitlab.com/ee/integration/oauth_provider.html). Make sure to set the **authorization callback URL** to the `callback` route of the deployed application. For example, if you were going to deploy the IDRC CMS Authenticator to `https://auth.example.com`, the **authorization callback URL** would be `https://auth.example.com/callback`.
 2. Configure environment variables for the application in a `.env` file:
@@ -24,7 +24,7 @@ OAUTH_CLIENT_ID=""
 OAUTH_CLIENT_SECRET=""
 ```
 
-## Serving locally
+### Serving locally
 
 1. Install the required packages: `npm install`
 2. Run the application: `npm start`
@@ -33,7 +33,7 @@ The application will be available at <http://localhost:3000>.
 
 **Note:** that the authorization callback cannot redirect to a `localhost` URL, but you will be able to test the authorization flow.
 
-## Serving locally using Docker
+### Serving locally using Docker
 
 You can also build and serve the application locally from a [Docker](https://docs.docker.com/get-docker) container.
 
@@ -46,6 +46,19 @@ The server will be available at <http://localhost:3000>.
 
 **Note:** the authorization callback cannot redirect to a `localhost` URL, but you will be able to test the authorization flow.
 
-## Deployment using Docker Compose
+### Deployment using Docker Compose
 
 TODO.
+
+## License
+
+IDRC CMS Authenticator is available under the [New BSD License](https://raw.githubusercontent.com/inclusive-design/idrc-cms-authenticator/main/LICENSE.md).
+
+## Third Party Software in IDRC CMS Authenticator
+
+IDRC CMS Authenticator is based on other publicly available software, categorized by license:
+
+### MIT License
+
+* [netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-cms-github-oauth-provider)
+* [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth)
