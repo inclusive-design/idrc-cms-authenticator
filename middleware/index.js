@@ -28,20 +28,20 @@ const htmlResponse = ({ provider = "unknown", token, error, errorCode }) => {
 	const content = error ? { provider, error, errorCode } : { provider, token };
 
 	return `
-      <!doctype html><html><body><script>
-        (() => {
-          window.addEventListener('message', ({ data, origin }) => {
-            if (data === 'authorizing:${provider}') {
-              window.opener?.postMessage(
-                'authorization:${provider}:${state}:${JSON.stringify(content)}',
-                origin
-              );
-            }
-          });
-          window.opener?.postMessage('authorizing:${provider}', '*');
-        })();
-      </script></body></html>
-    `;
+		<!doctype html><html><body><script>
+			(() => {
+				window.addEventListener('message', ({ data, origin }) => {
+					if (data === 'authorizing:${provider}') {
+						window.opener?.postMessage(
+							'authorization:${provider}:${state}:${JSON.stringify(content)}',
+							origin
+						);
+					}
+				});
+				window.opener?.postMessage('authorizing:${provider}', '*');
+			})();
+		</script></body></html>
+	`;
 };
 
 const authMiddleware = () => {
