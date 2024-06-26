@@ -261,7 +261,7 @@ const callbackMiddleware = () => {
 		}
 
 		try {
-			({ access_token: token, error } = response.json());
+			({ access_token: token, error } = await response.json());
 		} catch {
 			res.set(defaultHeaders);
 			res.send(
