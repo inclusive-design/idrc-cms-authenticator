@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.0-beta.2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2024-06-26)
+
+
+### Bug Fixes
+
+* configure c8 for more accurate coverage ([#12](https://github.com/inclusive-design/idrc-cms-authenticator/issues/12)) ([20d1e0e](https://github.com/inclusive-design/idrc-cms-authenticator/commit/20d1e0eb86e9da4053e2cbe21044316a44663609))
+* provide token in final response ([3d21605](https://github.com/inclusive-design/idrc-cms-authenticator/commit/3d216053f3c965978ad283d4d6a84a50096f759d))
+* provide token in final response (resolves [#15](https://github.com/inclusive-design/idrc-cms-authenticator/issues/15)) ([#17](https://github.com/inclusive-design/idrc-cms-authenticator/issues/17)) ([3d21605](https://github.com/inclusive-design/idrc-cms-authenticator/commit/3d216053f3c965978ad283d4d6a84a50096f759d))
+
+
+### Miscellaneous Chores
+
+* **release:** release 1.0.0-beta.2 ([#14](https://github.com/inclusive-design/idrc-cms-authenticator/issues/14)) ([35549d9](https://github.com/inclusive-design/idrc-cms-authenticator/commit/35549d9d3f4b0540006b0cd5752158e847ee6d78))
+
 ## [1.0.0-beta.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v0.0.1...v1.0.0-beta.1) (2024-06-25)
 
 
