@@ -67,7 +67,7 @@ const authMiddleware = () => {
 			ALLOWED_DOMAINS,
 			OAUTH_CLIENT_ID,
 			OAUTH_CLIENT_SECRET,
-			GIT_HOSTNAME = "github.com",
+			GIT_HOSTNAME = provider === "github" ? "github.com" : "gitlab.com",
 		} = process.env;
 
 		// Check if the domain is whitelisted
@@ -191,7 +191,7 @@ const callbackMiddleware = () => {
 		const {
 			OAUTH_CLIENT_ID,
 			OAUTH_CLIENT_SECRET,
-			GIT_HOSTNAME = "github.com",
+			GIT_HOSTNAME = provider === "github" ? "github.com" : "gitlab.com",
 		} = process.env;
 
 		if (!OAUTH_CLIENT_ID || !OAUTH_CLIENT_SECRET) {
@@ -245,10 +245,6 @@ const callbackMiddleware = () => {
 				body: JSON.stringify(requestBody),
 			});
 		} catch {
-			//
-		}
-
-		if (!response) {
 			res.set(defaultHeaders);
 			res.send(
 				htmlResponse({

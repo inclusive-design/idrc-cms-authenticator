@@ -24,6 +24,8 @@ OAUTH_CLIENT_ID=""
 OAUTH_CLIENT_SECRET=""
 ```
 
+If you are using GitHub Enterprise Server or a self-hosted instance of GitLab you'll also need to set `GIT_HOSTNAME` to the hostname of your server.
+
 ### Serving locally
 
 1. Install the required packages: `npm install`
