@@ -1,0 +1,7 @@
+services:
+  idrc-cms-authenticator:
+    build: .
+    container_name: "auth-incd-ca"
+    env_file: .env.test
+    ports:
+      - "3000:3000"
