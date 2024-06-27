@@ -50,7 +50,7 @@ The server will be available at <http://localhost:3000>.
 
 ### Deployment using Docker Compose
 
-TODO.
+The project contains an example [Docker Compose file](docker-compose.yml) which can be used as a basis for deploying the application with Docker Compose. For more information on how to modify the file for this purpose, see ["Use Compose in production"](https://docs.docker.com/compose/production/).
 
 ## License
 
