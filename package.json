@@ -14,13 +14,7 @@
 		"prepare": "husky",
 		"test": "c8 --all -r clover -r text ava"
 	},
-	"keywords": [
-		"decap-cms",
-		"sveltia-cms",
-		"github",
-		"gitlab",
-		"auth"
-	],
+	"keywords": ["decap-cms", "sveltia-cms", "github", "gitlab", "auth"],
 	"author": "OCAD University <idrc@ocadu.ca>",
 	"license": "BSD-3-Clause",
 	"dependencies": {
@@ -37,8 +31,6 @@
 		"supertest": "^7.0.0"
 	},
 	"lint-staged": {
-		"*.{js,json}": [
-			"biome check --write --no-errors-on-unmatched"
-		]
+		"*.{js,json}": ["biome check --write --no-errors-on-unmatched"]
 	}
 }
