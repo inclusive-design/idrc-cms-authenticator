@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0-beta.2...v1.0.0) (2024-06-27)
+
+
+### Bug Fixes
+
+* add NVM configuration ([a01043c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a01043ce63299a6264ca9dbf29d87c6e5c5a06ad))
+* consolidate error handling into catch (resolves [#24](https://github.com/inclusive-design/idrc-cms-authenticator/issues/24)) ([#25](https://github.com/inclusive-design/idrc-cms-authenticator/issues/25)) ([a01043c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a01043ce63299a6264ca9dbf29d87c6e5c5a06ad))
+* modify script permissions ([#28](https://github.com/inclusive-design/idrc-cms-authenticator/issues/28)) ([b85e1ff](https://github.com/inclusive-design/idrc-cms-authenticator/commit/b85e1ff0bb5859de494a745f0e617391e1b178f9))
+* set GIT_HOSTNAME for GitLab (resolves [#23](https://github.com/inclusive-design/idrc-cms-authenticator/issues/23)) ([a01043c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a01043ce63299a6264ca9dbf29d87c6e5c5a06ad))
+* use more consistent whitespace in middleware ([#20](https://github.com/inclusive-design/idrc-cms-authenticator/issues/20)) ([0937019](https://github.com/inclusive-design/idrc-cms-authenticator/commit/093701973c299496537e585f92ba25b756b44dc0))
+
+
+### Miscellaneous Chores
+
+* **release:** release 1.0.0 ([#22](https://github.com/inclusive-design/idrc-cms-authenticator/issues/22)) ([ac7c0c8](https://github.com/inclusive-design/idrc-cms-authenticator/commit/ac7c0c8bf55b1c210286b86716ef2b19e877c220))
+
 ## [1.0.0-beta.2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2024-06-26)
 
 
