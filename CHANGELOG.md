@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0...v1.0.1) (2024-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cookie-parser to v1.4.7 ([#60](https://github.com/inclusive-design/idrc-cms-authenticator/issues/60)) ([797102b](https://github.com/inclusive-design/idrc-cms-authenticator/commit/797102bcbe4e4482981823674fd2747ab35105c4))
+* **deps:** update dependency express to v4.20.0 ([#49](https://github.com/inclusive-design/idrc-cms-authenticator/issues/49)) ([ab110d3](https://github.com/inclusive-design/idrc-cms-authenticator/commit/ab110d397805235306af56cda9ed6d1311fda207))
+* **deps:** update dependency express to v4.21.0 ([#52](https://github.com/inclusive-design/idrc-cms-authenticator/issues/52)) ([0013fb9](https://github.com/inclusive-design/idrc-cms-authenticator/commit/0013fb9bec5207e9a6933c8120c42c2aac67ed2c))
+* **deps:** update dependency express to v4.21.1 ([#61](https://github.com/inclusive-design/idrc-cms-authenticator/issues/61)) ([4e714da](https://github.com/inclusive-design/idrc-cms-authenticator/commit/4e714da868f90833f742a42b427c10f09ac6cf5f))
+
 ## [1.0.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0-beta.2...v1.0.0) (2024-06-27)
 
 
