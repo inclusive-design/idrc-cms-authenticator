@@ -4,7 +4,11 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm i
+# Do not remove the 'apk update && apk upgrade' commands below. Workaround for installing latest
+# Alpine security updates in case upstream images don't get built and pushed regularly.
+RUN apk update && \
+    apk upgrade --no-cache && \
+    npm i
 
 COPY . .
 
