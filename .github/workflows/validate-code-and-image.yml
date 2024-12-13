@@ -88,7 +88,7 @@ jobs:
           bin/integration.sh http://localhost:3000/auth
 
       - name: Scan image
-        uses: anchore/scan-action@v5
+        uses: anchore/scan-action@v6
         with:
           image: "idrc-cms-authenticator"
           only-fixed: true
