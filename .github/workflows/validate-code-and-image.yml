@@ -89,7 +89,7 @@ jobs:
       - name: Scan image
         uses: anchore/scan-action@v5
         with:
-          image: idrc-cms-authenticator
+          image: "idrc-cms-authenticator"
           only-fixed: true
           cache-db: true
           output-format: table
