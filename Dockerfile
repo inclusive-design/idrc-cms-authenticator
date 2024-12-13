@@ -1,14 +1,18 @@
-FROM node:22-alpine
+FROM node:23-alpine
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-# Do not remove the 'apk update && apk upgrade' commands below. Workaround for installing latest
-# Alpine security updates in case upstream images don't get built and pushed regularly.
-RUN apk update && \
-    apk upgrade --no-cache && \
-    npm i
+# Do not remove the 'apk upgrade --no-cache' command below. Workaround for installing latest
+# Alpine OS security updates in case upstream images don't get built and pushed regularly.
+#
+# Pass the following 'docker build' argument to invalidate layer caching and force this step to
+# always run: --build-arg CACHE_BUST=$(date +%s)
+ARG CACHE_BUST=1
+RUN apk upgrade --no-cache && \
+    echo "Cache bust: $CACHE_BUST" && \
+    npm ci
 
 COPY . .
 

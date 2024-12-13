@@ -7,8 +7,13 @@ wait_for_url () {
     return 0
 }
 
-echo "Starting container..."
-docker compose up --detach --build
+# GitHub Actions should use the docker/build-push-action action for building an image to make use
+# of its GHA cache backend. GHA workflows should not use Docker Compose's '--build' option because
+# Compose does not support BuildKit/buildx.
+if [ "$GITHUB_ACTIONS" != "true" ]; then
+    echo "Starting container..."
+    docker compose up --build --detach
+fi
 
 echo "Waiting for server to be ready..."
 wait_for_url "$1" 60
