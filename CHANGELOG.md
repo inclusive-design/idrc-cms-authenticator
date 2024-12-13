@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.0...v1.1.1) (2024-12-13)
+
+
+### Bug Fixes
+
+* resolve cross-spawn issue ([#83](https://github.com/inclusive-design/idrc-cms-authenticator/issues/83)) ([155f410](https://github.com/inclusive-design/idrc-cms-authenticator/commit/155f410d9bc1733578cd221236acae88eb5b7de1))
+
 ## [1.1.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0...v1.1.0) (2024-12-11)
 
 
