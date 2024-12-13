@@ -76,6 +76,7 @@ jobs:
           build-args: CACHE_BUST=${{ env.CACHE_BUST }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          load: true
 
       - name: Run Docker Compose using built image
         run: docker compose up --detach
