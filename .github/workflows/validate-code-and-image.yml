@@ -64,7 +64,7 @@ jobs:
       - name: Export $CACHE_BUST environment variable
         run: echo "CACHE_BUST=$(date +%FT%T%z)" >> $GITHUB_ENV
 
-      # Docker Compose builds an image with a default name of 'tracktime-tracktime'. Building an
+      # Docker Compose builds an image with a default name of 'idrc-cms-authenticator'. Building an
       # image with that name here and then using Docker Compose to start it in the next step. This
       # is a workaround because Compose does not support BuildKit/buildx, which is required for
       # GHA caching.
