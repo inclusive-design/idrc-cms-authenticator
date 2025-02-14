@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.4...v1.1.5) (2025-02-14)
+
+
+### Bug Fixes
+
+* **dips:** update node.js to v23.8.0 ([551a760](https://github.com/inclusive-design/idrc-cms-authenticator/commit/551a760b58e20508fa065d1123d12f40616a3f56))
+
 ## [1.1.4](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.3...v1.1.4) (2025-02-13)
 
 
