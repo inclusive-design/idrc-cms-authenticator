@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.12](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.11...v1.1.12) (2025-04-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency express to v5 ([#126](https://github.com/inclusive-design/idrc-cms-authenticator/issues/126)) ([192523f](https://github.com/inclusive-design/idrc-cms-authenticator/commit/192523ff931d24fb87032dae80fb0fa074b7fa4b))
+
 ## [1.1.11](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.10...v1.1.11) (2025-03-25)
 
 
