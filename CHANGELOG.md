@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.16](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.15...v1.1.16) (2025-04-29)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([#140](https://github.com/inclusive-design/idrc-cms-authenticator/issues/140)) ([9b75f46](https://github.com/inclusive-design/idrc-cms-authenticator/commit/9b75f46c09f0ca22a508ca6062dd84dbcf2544f0))
+
 ## [1.1.15](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.14...v1.1.15) (2025-04-21)
 
 
