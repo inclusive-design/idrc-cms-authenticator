@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.18](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.17...v1.1.18) (2025-05-21)
+
+
+### Miscellaneous Chores
+
+* release 1.1.18 ([1c0e88e](https://github.com/inclusive-design/idrc-cms-authenticator/commit/1c0e88e370a0728277a0fac2bbf62a75b9e9fd87))
+
 ## [1.1.17](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.16...v1.1.17) (2025-05-06)
 
 
