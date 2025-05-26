@@ -1,0 +1,27 @@
+categories:
+  - title: "Features"
+    label: "enhancement"
+  - title: "Bug Fixes"
+    label: "bug"
+  - title: "Chores"
+    labels:
+      - "chore"
+      - "documentation"
+  - title: "Dependencies"
+    label: "dependencies"
+autolabeler:
+  - label: "chore"
+    title:
+      - '/chore(?!\(deps\))/i'
+  - label: "bug"
+    title:
+      - '/fix(?!\(deps\))/i'
+  - label: "enhancement"
+    title:
+      - "/feat/i"
+exclude-labels:
+  - "changelog"
+template: |
+  ## Changes
+
+  $CHANGES
