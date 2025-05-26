@@ -43,5 +43,6 @@ jobs:
         with:
           commit-message: "chore(release): release ${{ steps.release.outputs.tag_name }}"
           title: "chore(release): release ${{ steps.release.outputs.tag_name }}"
+          body: "Update changelog with release notes for ${{ steps.release.outputs.tag_name }}."
           branch: changelog
           labels: changelog
