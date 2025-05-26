@@ -23,6 +23,6 @@ exclude-labels:
   - "changelog"
 category-template: "### $TITLE"
 template: |
-  ## [$VERSION](https://github.com/inclusive-design/idrc-cms-authenticator/compare/$PREVIOUS_TAG...$VERSION)
+  ## [$TAG_NAME](https://github.com/inclusive-design/idrc-cms-authenticator/compare/$PREVIOUS_TAG...$TAG_NAME)
 
   $CHANGES
