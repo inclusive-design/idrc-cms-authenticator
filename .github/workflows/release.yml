@@ -1,0 +1,29 @@
+name: Draft release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Generate CalVer version
+        id: calver
+        run: |
+          export VERSION=$(date "+%Y.%m.%d")
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+      - uses: release-drafter/release-drafter@v5
+        with:
+          tag: ${{ steps.calver.outputs.version }}
+          name: ${{ steps.calver.outputs.version }}
+          version: ${{ steps.calver.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
