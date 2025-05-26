@@ -12,7 +12,7 @@ categories:
 autolabeler:
   - label: "chore"
     title:
-      - '/chore(?!\(deps\))/i'
+      - '/chore(?!\((deps|release)\))/i'
   - label: "bug"
     title:
       - '/fix(?!\(deps\))/i'
