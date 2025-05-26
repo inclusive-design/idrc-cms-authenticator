@@ -23,9 +23,17 @@ jobs:
           export VERSION=$(date "+%Y.%m.%d")
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
       - uses: release-drafter/release-drafter@v6
+        id: release
         with:
           tag: ${{ steps.calver.outputs.version }}
           name: ${{ steps.calver.outputs.version }}
           version: ${{ steps.calver.outputs.version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update changelog
+        uses: stefanzweifel/changelog-updater-action@v1
+        with:
+          latest-version: ${{ steps.release.outputs.tag_name }}
+          release-notes: ${{ steps.release.outputs.body }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
