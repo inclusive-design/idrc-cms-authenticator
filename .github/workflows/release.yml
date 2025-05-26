@@ -45,6 +45,7 @@ jobs:
           hide-release-date: true
           parse-github-usernames: true
       - name: Create Pull Request
+        if: ${{ steps.release.outputs.tag_name }}
         uses: peter-evans/create-pull-request@v7
         with:
           add-paths: CHANGELOG.md
