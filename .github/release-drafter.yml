@@ -21,7 +21,8 @@ autolabeler:
       - "/feat/i"
 exclude-labels:
   - "changelog"
+category-template: "### $TITLE"
 template: |
-  ## Changes
+  ## [$RESOLVED_VERSION](https://github.com/inclusive-design/idrc-cms-authenticator/compare/$PREVIOUS_TAG...$RESOLVED_VERSION)
 
   $CHANGES
