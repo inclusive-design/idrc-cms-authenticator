@@ -35,5 +35,8 @@ jobs:
         with:
           latest-version: ${{ steps.release.outputs.tag_name }}
           release-notes: ${{ steps.release.outputs.body }}
+          path-to-changelog: CHANGELOG.md
+          hide-release-date: true
+          parse-github-usernames: true
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
