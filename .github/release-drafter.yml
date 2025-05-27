@@ -12,13 +12,13 @@ categories:
 autolabeler:
   - label: "chore"
     title:
-      - '/chore(?!\((deps|release)\))/i'
+      - '/^chore(?!\((deps|release)\))/i'
   - label: "bug"
     title:
-      - '/fix(?!\(deps\))/i'
+      - '/^fix(?!\(deps\))/i'
   - label: "enhancement"
     title:
-      - "/feat/i"
+      - "/^feat/i"
 exclude-labels:
   - "changelog"
 category-template: "### $TITLE"
