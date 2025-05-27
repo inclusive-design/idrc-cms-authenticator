@@ -39,7 +39,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
       - name: Generate release
-        if: github.event_name == 'push' && !startsWith(github.event.head_commit.message, 'chore(release)')
+        if: github.event_name == 'pull_request' || github.event_name == 'push' && !startsWith(github.event.head_commit.message, 'chore(release)')
         uses: release-drafter/release-drafter@v6
         id: draft
         with:
