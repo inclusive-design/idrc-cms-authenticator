@@ -1,7 +1,24 @@
 # Changelog
 
-## [1.1.18](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.17...v1.1.18) (2025-05-21)
+## [2025.05.27](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.18...2025.05.27)
 
+### Chores
+
+* chore: fix conditional for draft changelog (#162) [@greatislander](https://github.com/greatislander)
+* chore: publish when changelog has been merged (#161) [@greatislander](https://github.com/greatislander)
+* chore: update changelog and create PR (#159) [@greatislander](https://github.com/greatislander)
+* chore: use $input_version (#158) [@greatislander](https://github.com/greatislander)
+* chore: try tag_name variable (#157) [@greatislander](https://github.com/greatislander)
+* chore: fix version (#156) [@greatislander](https://github.com/greatislander)
+* chore: adjust template (#155) [@greatislander](https://github.com/greatislander)
+* chore: draft release using release-drafter (#153) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#152) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update release-drafter/release-drafter action to v6 (#154) @[renovate[bot]](https://github.com/apps/renovate)
+
+## [1.1.18](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.17...v1.1.18) (2025-05-21)
 
 ### Miscellaneous Chores
 
@@ -9,13 +26,11 @@
 
 ## [1.1.17](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.16...v1.1.17) (2025-05-06)
 
-
 ### Bug Fixes
 
 * **deps:** lock file maintenance ([#143](https://github.com/inclusive-design/idrc-cms-authenticator/issues/143)) ([c486d18](https://github.com/inclusive-design/idrc-cms-authenticator/commit/c486d188f6c000f38d1f5cfe8b3dc171fe5bf16f))
 
 ## [1.1.16](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.15...v1.1.16) (2025-04-29)
-
 
 ### Bug Fixes
 
@@ -23,20 +38,17 @@
 
 ## [1.1.15](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.14...v1.1.15) (2025-04-21)
 
-
 ### Bug Fixes
 
 * **deps:** lock file maintenance ([#138](https://github.com/inclusive-design/idrc-cms-authenticator/issues/138)) ([2b439d3](https://github.com/inclusive-design/idrc-cms-authenticator/commit/2b439d3dfe5c95546ec0d57c4ec5dc51ae48285a))
 
 ## [1.1.14](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.13...v1.1.14) (2025-04-15)
 
-
 ### Bug Fixes
 
 * **deps:** lock file maintenance ([#135](https://github.com/inclusive-design/idrc-cms-authenticator/issues/135)) ([c3425f3](https://github.com/inclusive-design/idrc-cms-authenticator/commit/c3425f33b221a51095cf6b330d335b7b223f8bca))
 
 ## [1.1.13](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.12...v1.1.13) (2025-04-07)
-
 
 ### Bug Fixes
 
@@ -45,13 +57,11 @@
 
 ## [1.1.12](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.11...v1.1.12) (2025-04-01)
 
-
 ### Bug Fixes
 
 * **deps:** update dependency express to v5 ([#126](https://github.com/inclusive-design/idrc-cms-authenticator/issues/126)) ([192523f](https://github.com/inclusive-design/idrc-cms-authenticator/commit/192523ff931d24fb87032dae80fb0fa074b7fa4b))
 
 ## [1.1.11](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.10...v1.1.11) (2025-03-25)
-
 
 ### Miscellaneous Chores
 
@@ -59,13 +69,11 @@
 
 ## [1.1.10](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.9...v1.1.10) (2025-03-17)
 
-
 ### Bug Fixes
 
 * **deps:** update node.js to v23.10.0 ([#118](https://github.com/inclusive-design/idrc-cms-authenticator/issues/118)) ([0b47a2c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/0b47a2c20c424350ad40e0a8b63e08ec0588986c))
 
 ## [1.1.9](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.8...v1.1.9) (2025-03-10)
-
 
 ### Bug Fixes
 
@@ -73,13 +81,11 @@
 
 ## [1.1.8](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.7...v1.1.8) (2025-03-04)
 
-
 ### Miscellaneous Chores
 
 * **release:** release 1.1.8 ([#113](https://github.com/inclusive-design/idrc-cms-authenticator/issues/113)) ([c87a31d](https://github.com/inclusive-design/idrc-cms-authenticator/commit/c87a31d0ead17b4606e6e4b90aa2c2599f20932b))
 
 ## [1.1.7](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.6...v1.1.7) (2025-02-27)
-
 
 ### Miscellaneous Chores
 
@@ -87,13 +93,11 @@
 
 ## [1.1.6](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.5...v1.1.6) (2025-02-21)
 
-
 ### Miscellaneous Chores
 
 * **release:** release 1.1.6 ([#106](https://github.com/inclusive-design/idrc-cms-authenticator/issues/106)) ([174f4e0](https://github.com/inclusive-design/idrc-cms-authenticator/commit/174f4e0b358fb92148a875a4d73f3feb2c61c32f))
 
 ## [1.1.5](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.4...v1.1.5) (2025-02-14)
-
 
 ### Bug Fixes
 
@@ -101,13 +105,11 @@
 
 ## [1.1.4](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.3...v1.1.4) (2025-02-13)
 
-
 ### Miscellaneous Chores
 
 * **release:** release 1.1.4 ([#100](https://github.com/inclusive-design/idrc-cms-authenticator/issues/100)) ([30329b2](https://github.com/inclusive-design/idrc-cms-authenticator/commit/30329b20068899783885c7b31a7d6a5b2fd957a2))
 
 ## [1.1.3](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.2...v1.1.3) (2025-02-11)
-
 
 ### Miscellaneous Chores
 
@@ -115,13 +117,11 @@
 
 ## [1.1.2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.1...v1.1.2) (2025-01-27)
 
-
 ### Bug Fixes
 
 * bump node version ([#94](https://github.com/inclusive-design/idrc-cms-authenticator/issues/94)) ([f4c685c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/f4c685c13ca77812e0a4ccda2d69db3a5a31c261))
 
 ## [1.1.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.0...v1.1.1) (2024-12-13)
-
 
 ### Bug Fixes
 
@@ -129,11 +129,9 @@
 
 ## [1.1.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0...v1.1.0) (2024-12-11)
 
-
 ### Features
 
 * runs apk upgrade for security updates ([#65](https://github.com/inclusive-design/idrc-cms-authenticator/issues/65)) ([a588e02](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a588e02d824e52ccb6f9f64b3f5597b60cb0c5c7))
-
 
 ### Bug Fixes
 
@@ -147,7 +145,6 @@
 
 ## [1.0.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0-beta.2...v1.0.0) (2024-06-27)
 
-
 ### Bug Fixes
 
 * add NVM configuration ([a01043c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a01043ce63299a6264ca9dbf29d87c6e5c5a06ad))
@@ -156,13 +153,11 @@
 * set GIT_HOSTNAME for GitLab (resolves [#23](https://github.com/inclusive-design/idrc-cms-authenticator/issues/23)) ([a01043c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a01043ce63299a6264ca9dbf29d87c6e5c5a06ad))
 * use more consistent whitespace in middleware ([#20](https://github.com/inclusive-design/idrc-cms-authenticator/issues/20)) ([0937019](https://github.com/inclusive-design/idrc-cms-authenticator/commit/093701973c299496537e585f92ba25b756b44dc0))
 
-
 ### Miscellaneous Chores
 
 * **release:** release 1.0.0 ([#22](https://github.com/inclusive-design/idrc-cms-authenticator/issues/22)) ([ac7c0c8](https://github.com/inclusive-design/idrc-cms-authenticator/commit/ac7c0c8bf55b1c210286b86716ef2b19e877c220))
 
 ## [1.0.0-beta.2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2024-06-26)
-
 
 ### Bug Fixes
 
@@ -170,24 +165,20 @@
 * provide token in final response ([3d21605](https://github.com/inclusive-design/idrc-cms-authenticator/commit/3d216053f3c965978ad283d4d6a84a50096f759d))
 * provide token in final response (resolves [#15](https://github.com/inclusive-design/idrc-cms-authenticator/issues/15)) ([#17](https://github.com/inclusive-design/idrc-cms-authenticator/issues/17)) ([3d21605](https://github.com/inclusive-design/idrc-cms-authenticator/commit/3d216053f3c965978ad283d4d6a84a50096f759d))
 
-
 ### Miscellaneous Chores
 
 * **release:** release 1.0.0-beta.2 ([#14](https://github.com/inclusive-design/idrc-cms-authenticator/issues/14)) ([35549d9](https://github.com/inclusive-design/idrc-cms-authenticator/commit/35549d9d3f4b0540006b0cd5752158e847ee6d78))
 
 ## [1.0.0-beta.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v0.0.1...v1.0.0-beta.1) (2024-06-25)
 
-
 ### Features
 
 * build Docker image and push to ECR ([#4](https://github.com/inclusive-design/idrc-cms-authenticator/issues/4)) ([9e6f158](https://github.com/inclusive-design/idrc-cms-authenticator/commit/9e6f158c0c808efec7c26055e2b85ec4f0ef316d))
 * refactor based on sveltia-cms-auth ([#8](https://github.com/inclusive-design/idrc-cms-authenticator/issues/8)) ([bcc0fbd](https://github.com/inclusive-design/idrc-cms-authenticator/commit/bcc0fbd6ca17df068ed1152cf36d16a7f8b90a00))
 
-
 ### Bug Fixes
 
 * resolve issues with Docker build ([#5](https://github.com/inclusive-design/idrc-cms-authenticator/issues/5)) ([c9d8208](https://github.com/inclusive-design/idrc-cms-authenticator/commit/c9d8208ec125ad57e7602e1f6cd96c1a616323d9))
-
 
 ### Miscellaneous Chores
 
