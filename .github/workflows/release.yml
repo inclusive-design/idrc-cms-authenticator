@@ -28,8 +28,20 @@ jobs:
         run: |
           export VERSION=$(date "+%Y.%m.%d")
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
-      - uses: release-drafter/release-drafter@v6
-        id: release
+      - name: Publish release
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'chore(release)')
+        uses: release-drafter/release-drafter@v6
+        with:
+          publish: true
+          tag: ${{ steps.calver.outputs.version }}
+          name: ${{ steps.calver.outputs.version }}
+          version: ${{ steps.calver.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+      - name: Generate release
+        if: github.event_name == 'push' && !startsWith(github.event.head_commit.message, 'chore(release)')
+        uses: release-drafter/release-drafter@v6
+        id: draft
         with:
           tag: ${{ steps.calver.outputs.version }}
           name: ${{ steps.calver.outputs.version }}
@@ -37,15 +49,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
       - name: Update changelog
-        if: ${{ steps.release.outputs.tag_name }}
+        if: ${{ steps.draft.outputs.tag_name }}
         uses: stefanzweifel/changelog-updater-action@v1
         with:
           latest-version: ${{ steps.release.outputs.tag_name }}
           release-notes: ${{ steps.release.outputs.body }}
           hide-release-date: true
           parse-github-usernames: true
-      - name: Create Pull Request
-        if: ${{ steps.release.outputs.tag_name }}
+      - name: Create pull request
+        if: ${{ steps.draft.outputs.tag_name }}
         uses: peter-evans/create-pull-request@v7
         with:
           add-paths: CHANGELOG.md
