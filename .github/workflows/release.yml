@@ -52,8 +52,8 @@ jobs:
         if: ${{ steps.draft.outputs.tag_name }}
         uses: stefanzweifel/changelog-updater-action@v1
         with:
-          latest-version: ${{ steps.release.outputs.tag_name }}
-          release-notes: ${{ steps.release.outputs.body }}
+          latest-version: ${{ steps.draft.outputs.tag_name }}
+          release-notes: ${{ steps.draft.outputs.body }}
           hide-release-date: true
           parse-github-usernames: true
       - name: Create pull request
@@ -61,9 +61,9 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           add-paths: CHANGELOG.md
-          commit-message: "chore(release): release ${{ steps.release.outputs.tag_name }}"
-          title: "chore(release): release ${{ steps.release.outputs.tag_name }}"
-          body: "Update changelog with release notes for ${{ steps.release.outputs.tag_name }}."
+          commit-message: "chore(release): release ${{ steps.draft.outputs.tag_name }}"
+          title: "chore(release): release ${{ steps.draft.outputs.tag_name }}"
+          body: "Update changelog with release notes for ${{ steps.draft.outputs.tag_name }}."
           branch: changelog
           labels: changelog
           token: ${{ steps.app-token.outputs.token }}
