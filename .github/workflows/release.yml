@@ -11,60 +11,8 @@ permissions:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - uses: actions/create-github-app-token@v2
-        id: app-token
-        with:
-          app-id: ${{ vars.GHA_APP_ID }}
-          private-key: ${{ secrets.GHA_PRIVATE_KEY }}
-      - uses: actions/checkout@v4
-      - name: Generate version
-        id: calver
-        run: |
-          export VERSION=$(date "+%Y.%m.%d.%H%M")
-          export SHA=$(git rev-parse --short HEAD)
-          echo "version=${VERSION}.${SHA}" >> "$GITHUB_OUTPUT"
-      - name: Publish release
-        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'chore(release)')
-        uses: release-drafter/release-drafter@v6
-        with:
-          publish: true
-          tag: ${{ steps.calver.outputs.version }}
-          name: ${{ steps.calver.outputs.version }}
-          version: ${{ steps.calver.outputs.version }}
-        env:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
-      - name: Generate release
-        if: github.event_name == 'pull_request' || github.event_name == 'push' && !startsWith(github.event.head_commit.message, 'chore(release)')
-        uses: release-drafter/release-drafter@v6
-        id: draft
-        with:
-          tag: ${{ steps.calver.outputs.version }}
-          name: ${{ steps.calver.outputs.version }}
-          version: ${{ steps.calver.outputs.version }}
-        env:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
-      - name: Update changelog
-        if: ${{ steps.draft.outputs.tag_name }}
-        uses: stefanzweifel/changelog-updater-action@v1
-        with:
-          latest-version: ${{ steps.draft.outputs.tag_name }}
-          release-notes: ${{ steps.draft.outputs.body }}
-          hide-release-date: true
-          parse-github-usernames: true
-      - name: Create pull request
-        if: ${{ steps.draft.outputs.tag_name }}
-        uses: peter-evans/create-pull-request@v7
-        with:
-          add-paths: CHANGELOG.md
-          commit-message: "chore(release): release ${{ steps.draft.outputs.tag_name }}"
-          title: "chore(release): release ${{ steps.draft.outputs.tag_name }}"
-          body: "Update changelog with release notes for ${{ steps.draft.outputs.tag_name }}."
-          branch: changelog
-          labels: changelog
-          token: ${{ steps.app-token.outputs.token }}
+    uses: inclusive-design/workflows/.github/workflows/release.yml@main
+    with:
+      GHA_APP_ID: ${{ vars.GHA_APP_ID }}
+    secrets:
+      GHA_PRIVATE_KEY: ${{ secrets.GHA_PRIVATE_KEY }}
