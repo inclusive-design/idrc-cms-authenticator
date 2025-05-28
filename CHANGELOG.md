@@ -1,5 +1,13 @@
 # Changelog
 
+## [2025.05.28.1447.6fa9f98](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.05.28.1332.38991ac...2025.05.28.1447.6fa9f98)
+
+### Chores
+
+* chore: remove package version (#171) [@greatislander](https://github.com/greatislander)
+* chore: switch to reusable release workflow (#170) [@greatislander](https://github.com/greatislander)
+* ci: change workflow name to release (#168) [@greatislander](https://github.com/greatislander)
+
 ## [2025.05.28.1332.38991ac](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.05.27...2025.05.28.1332.38991ac)
 
 ### Chores
