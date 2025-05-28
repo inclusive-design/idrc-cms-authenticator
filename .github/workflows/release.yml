@@ -27,7 +27,8 @@ jobs:
         id: calver
         run: |
           export VERSION=$(date "+%Y.%m.%d.%H%M")
-          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          export SHA=$(git rev-parse --short HEAD)
+          echo "version=${VERSION}.${SHA}" >> "$GITHUB_OUTPUT"
       - name: Publish release
         if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'chore(release)')
         uses: release-drafter/release-drafter@v6
@@ -43,9 +44,9 @@ jobs:
         uses: release-drafter/release-drafter@v6
         id: draft
         with:
-          tag: ${{ steps.calver.outputs.version }}.${{ github.sha }}
-          name: ${{ steps.calver.outputs.version }}.${{ github.sha }}
-          version: ${{ steps.calver.outputs.version }}.${{ github.sha }}
+          tag: ${{ steps.calver.outputs.version }}
+          name: ${{ steps.calver.outputs.version }}
+          version: ${{ steps.calver.outputs.version }}
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
       - name: Update changelog
