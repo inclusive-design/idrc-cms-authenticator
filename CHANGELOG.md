@@ -1,5 +1,17 @@
 # Changelog
 
+## [2025.05.28.1332.38991ac](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.05.27...2025.05.28.1332.38991ac)
+
+### Chores
+
+* chore: use shorter SHA (#167) [@greatislander](https://github.com/greatislander)
+* chore: append timestamp and SHA to version (#165) [@greatislander](https://github.com/greatislander)
+* chore: use regex for start of commit messages (#163) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): update dependency lint-staged to v16.1.0 (#164) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.05.27](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v1.1.18...2025.05.27)
 
 ### Chores
