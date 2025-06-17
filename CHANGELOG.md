@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.06.17.1546.a0d875a](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.06.12.1147.4a5dbac...2025.06.17.1546.a0d875a)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#175) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.06.12.1147.4a5dbac](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.05.28.1332.38991ac...2025.06.12.1147.4a5dbac)
 
 ### Chores
