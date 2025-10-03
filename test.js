@@ -115,7 +115,7 @@ test.serial(
 		t.is(res.redirect, true);
 		t.regex(
 			res.header.location,
-			/https:\/\/gitlab.com\/oauth\/authorize\?client_id=client-id&redirect_uri=http\%3A\%2F\%2F127\.0\.0\.1\%2Fcallback&response_type=code&scope=api&state=[a-zA-Z0-9_-]+/,
+			/https:\/\/gitlab.com\/oauth\/authorize\?client_id=client-id&redirect_uri=http%3A%2F%2F127\.0\.0\.1%2Fcallback&response_type=code&scope=api&state=[a-zA-Z0-9_-]+/,
 		);
 		t.teardown(() => {
 			process.env.GIT_HOSTNAME = "github.com";
