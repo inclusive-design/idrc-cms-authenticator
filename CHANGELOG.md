@@ -1,5 +1,20 @@
 # Changelog
 
+## [2025.10.03.1732.d82915e](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.03.1634.f879c5d...2025.10.03.1732.d82915e)
+
+* ci: scan image before running integration tests (#193) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.2.5 (#194) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/setup-node action to v5 (#188) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2 (#176) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update aws-actions/configure-aws-credentials action to v5 (#189) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/checkout action to v5 - autoclosed (#187) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/download-artifact action to v5 (#186) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency dotenv to v17 (#180) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#184) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.10.03.1634.f879c5d](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.07.22.1617.02e90f8...2025.10.03.1634.f879c5d)
 
 ### Dependencies
