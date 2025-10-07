@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.10.06.1136.6916243](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.03.1732.d82915e...2025.10.06.1136.6916243)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#195) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.10.03.1732.d82915e](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.03.1634.f879c5d...2025.10.03.1732.d82915e)
 
 * ci: scan image before running integration tests (#193) [@greatislander](https://github.com/greatislander)
