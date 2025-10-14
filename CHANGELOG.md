@@ -1,5 +1,13 @@
 # Changelog
 
+## [2025.10.14.1138.8a20cbc](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.06.1136.6916243...2025.10.14.1138.8a20cbc)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#198) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/setup-node action to v6 (#200) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.2.6 (#199) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.10.06.1136.6916243](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.03.1732.d82915e...2025.10.06.1136.6916243)
 
 ### Dependencies
