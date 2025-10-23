@@ -1,5 +1,12 @@
 # Changelog
 
+## [2025.10.23.1235.0a75853](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.21.1538.052ede6...2025.10.23.1235.0a75853)
+
+### Dependencies
+
+* chore(deps): update dependency lint-staged to v16.2.6 (#207) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.2.7 (#206) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.10.21.1538.052ede6](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.20.1434.df9aa98...2025.10.21.1538.052ede6)
 
 ### Dependencies
