@@ -24,7 +24,7 @@ jobs:
           npm run format
           npm run test
       - name: Save code coverage to artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: code-coverage
           path: "coverage/clover.xml"
@@ -39,7 +39,7 @@ jobs:
       # see: https://github.com/codecov/codecov-action/issues/1801
       - uses: actions/checkout@v5
       - name: Fetch code coverage artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: code-coverage
       - name: Upload coverage to Codecov
