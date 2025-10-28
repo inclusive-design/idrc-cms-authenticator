@@ -1,5 +1,20 @@
 # Changelog
 
+## [2025.10.28.1139.69f8b40](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.21.1538.052ede6...2025.10.28.1139.69f8b40)
+
+### Bug Fixes
+
+* fix: bump biome schema (#212) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): update node.js to v24 (#213) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#211) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update github artifact actions (major) (#210) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.1 (#209) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.2.6 (#207) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.2.7 (#206) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.10.21.1538.052ede6](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.20.1434.df9aa98...2025.10.21.1538.052ede6)
 
 ### Dependencies
