@@ -1,5 +1,17 @@
 # Changelog
 
+## [2025.11.04.1303.45e6031](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.28.1139.69f8b40...2025.11.04.1303.45e6031)
+
+### Chores
+
+* chore: fix Biome config (#219) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#216) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.3 (#214) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update node.js (#215) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.10.28.1139.69f8b40](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.21.1538.052ede6...2025.10.28.1139.69f8b40)
 
 ### Bug Fixes
