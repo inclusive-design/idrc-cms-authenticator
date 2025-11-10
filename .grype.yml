@@ -1,3 +1,2 @@
 ignore:
-
-- GHSA-29xp-372q-xqph
+  - GHSA-29xp-372q-xqph
