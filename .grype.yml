@@ -1,2 +1,2 @@
 ignore:
-  - GHSA-29xp-372q-xqph
+  - vulnerability: GHSA-29xp-372q-xqph
