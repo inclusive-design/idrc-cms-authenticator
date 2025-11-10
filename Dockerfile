@@ -12,6 +12,7 @@ COPY package*.json ./
 ARG CACHE_BUST=1
 RUN apk upgrade --no-cache && \
     echo "Cache bust: $CACHE_BUST" && \
+    npm update -g && \
     npm ci
 
 COPY . .
