@@ -31,7 +31,7 @@ FROM alpine:3.22
 
 WORKDIR /usr/src/app
 
-RUN apk add --no-cache libstdc++ dumb-init \
+RUN apk add --no-cache curl dumb-init libstdc++ \
     && addgroup -g 1000 node && adduser -u 1000 -G node -s /bin/sh -D node \
     && chown node:node ./
 
