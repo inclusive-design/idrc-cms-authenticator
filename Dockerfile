@@ -10,7 +10,7 @@ ARG ALPINE_VERSION=3.22
 ARG NODE_VERSION=24
 
 # Build stage
-FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} AS builder
+FROM node:24.11.0-alpine3.22 AS builder
 
 WORKDIR /build-stage
 
@@ -30,7 +30,7 @@ RUN apk upgrade --no-cache && \
 COPY . ./
 
 # Runtime stage without npm
-FROM alpine:${ALPINE_VERSION}
+FROM alpine:3.22
 
 WORKDIR /usr/src/app
 
