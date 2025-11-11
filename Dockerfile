@@ -49,4 +49,7 @@ COPY --from=builder /build-stage/node_modules ./node_modules
 
 EXPOSE 3000
 
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD curl --fail http://localhost:3000/auth || exit 1
+
 CMD ["dumb-init", "node", "app.js"]
