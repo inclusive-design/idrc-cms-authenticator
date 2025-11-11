@@ -36,9 +36,6 @@ RUN apk add --no-cache curl dumb-init libstdc++ \
     && chown node:node ./
 
 COPY --from=builder /usr/local/bin/node /usr/local/bin/
-COPY --from=builder /usr/local/bin/docker-entrypoint.sh /usr/local/bin/
-
-ENTRYPOINT ["docker-entrypoint.sh"]
 
 USER node
 
