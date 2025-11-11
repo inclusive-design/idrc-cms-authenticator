@@ -6,9 +6,6 @@
 # at least until the upstream image is updated. Omitting this path will result in fewer packages
 # being installed and ideally fewer vulnerabilities reports.
 
-ARG ALPINE_VERSION=3.22
-ARG NODE_VERSION=24
-
 # Build stage
 FROM node:24.11.0-alpine3.22 AS builder
 
