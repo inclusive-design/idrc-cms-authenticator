@@ -31,14 +31,11 @@ FROM alpine:3.22
 
 WORKDIR /usr/src/app
 
-RUN apk add --no-cache libstdc++ dumb-init \
+RUN apk add --no-cache curl dumb-init libstdc++ \
     && addgroup -g 1000 node && adduser -u 1000 -G node -s /bin/sh -D node \
     && chown node:node ./
 
 COPY --from=builder /usr/local/bin/node /usr/local/bin/
-COPY --from=builder /usr/local/bin/docker-entrypoint.sh /usr/local/bin/
-
-ENTRYPOINT ["docker-entrypoint.sh"]
 
 USER node
 
@@ -48,5 +45,8 @@ COPY --from=builder /build-stage/middleware ./middleware
 COPY --from=builder /build-stage/node_modules ./node_modules
 
 EXPOSE 3000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD curl --fail http://localhost:3000/auth || exit 1
 
 CMD ["dumb-init", "node", "app.js"]
