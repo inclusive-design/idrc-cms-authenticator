@@ -1,20 +1,52 @@
-FROM node:24.11.0-alpine
+# Refer to the official Node.js image's documentation:
+# https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#smaller-images-without-npmyarn
+#
+# The above approach is being used to build an image without npm and the
+# /usr/local/lib/node_modules/npm/node_modules/ path which can include vulnerable packages,
+# at least until the upstream image is updated. Omitting this path will result in fewer packages
+# being installed and ideally fewer vulnerabilities reports.
 
-WORKDIR /usr/src/app
+# Build stage
+FROM node:24.11.0-alpine3.22 AS builder
+
+WORKDIR /build-stage
 
 COPY package*.json ./
+
+ARG CACHE_BUST=1
 
 # Do not remove the 'apk upgrade --no-cache' command below. Workaround for installing latest
 # Alpine OS security updates in case upstream images don't get built and pushed regularly.
 #
 # Pass the following 'docker build' argument to invalidate layer caching and force this step to
 # always run: --build-arg CACHE_BUST=$(date +%s)
-ARG CACHE_BUST=1
 RUN apk upgrade --no-cache && \
     echo "Cache bust: $CACHE_BUST" && \
     npm ci
 
-COPY . .
+COPY . ./
+
+# Runtime stage without npm
+FROM alpine:3.22
+
+WORKDIR /usr/src/app
+
+RUN apk add --no-cache libstdc++ dumb-init \
+    && addgroup -g 1000 node && adduser -u 1000 -G node -s /bin/sh -D node \
+    && chown node:node ./
+
+COPY --from=builder /usr/local/bin/node /usr/local/bin/
+COPY --from=builder /usr/local/bin/docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+USER node
+
+# List of files and directories to include in the image:
+COPY --from=builder /build-stage/app.js ./app.js
+COPY --from=builder /build-stage/middleware ./middleware
+COPY --from=builder /build-stage/node_modules ./node_modules
 
 EXPOSE 3000
-CMD [ "npm", "start" ]
+
+CMD ["dumb-init", "node", "app.js"]
