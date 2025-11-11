@@ -1,5 +1,17 @@
 # Changelog
 
+## [2025.11.11.1252.008ea7f](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.04.1303.45e6031...2025.11.11.1252.008ea7f)
+
+### Features
+
+* feat: remove npm from final docker image (#225) [@avtar](https://github.com/avtar)
+
+### Dependencies
+
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.5 (#227) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#221) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.4 (#220) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.11.04.1303.45e6031](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.10.28.1139.69f8b40...2025.11.04.1303.45e6031)
 
 ### Chores
