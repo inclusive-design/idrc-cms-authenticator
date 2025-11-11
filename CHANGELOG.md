@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.11.11.1940.d62f1da](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.11.1252.008ea7f...2025.11.11.1940.d62f1da)
+
+### Features
+
+* feat: add curl health check (#228) [@avtar](https://github.com/avtar)
+
 ## [2025.11.11.1252.008ea7f](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.04.1303.45e6031...2025.11.11.1252.008ea7f)
 
 ### Features
