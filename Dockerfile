@@ -22,7 +22,7 @@ ARG CACHE_BUST=1
 # always run: --build-arg CACHE_BUST=$(date +%s)
 RUN apk upgrade --no-cache && \
     echo "Cache bust: $CACHE_BUST" && \
-    npm ci
+    npm ci --omit=dev
 
 COPY . ./
 
