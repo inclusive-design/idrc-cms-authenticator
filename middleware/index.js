@@ -1,4 +1,4 @@
-const { randomUUID } = require("node:crypto");
+import { randomUUID } from "node:crypto";
 
 /**
  * List of supported OAuth providers.
@@ -276,7 +276,7 @@ const callbackMiddleware = () => {
 	};
 };
 
-module.exports = {
+export default {
 	auth: authMiddleware(),
 	callback: callbackMiddleware(),
 };

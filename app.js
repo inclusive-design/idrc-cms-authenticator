@@ -1,8 +1,10 @@
-require("dotenv").config({ silent: true });
+import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+import express from "express";
+import middleware from "./middleware/index.js";
 
-const express = require("express");
-const cookieParser = require("cookie-parser");
-const middleware = require("./middleware/index.js");
+dotenv.config({ silent: true });
+
 const port = process.env.PORT || 3000;
 
 const app = express();
