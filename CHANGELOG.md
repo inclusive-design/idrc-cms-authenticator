@@ -1,5 +1,20 @@
 # Changelog
 
+## [2025.11.19.1252.8edebc9](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.11.1940.d62f1da...2025.11.19.1252.8edebc9)
+
+### Features
+
+* feat: upgrade to ESM (#236) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#237) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#235) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.6 (#234) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#233) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update node.js to v24.11.1 (#232) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#230) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.11.11.1940.d62f1da](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.11.1252.008ea7f...2025.11.11.1940.d62f1da)
 
 ### Features
