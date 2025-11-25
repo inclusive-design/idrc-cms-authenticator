@@ -1,5 +1,19 @@
 # Changelog
 
+## [2025.11.25.1459.f66d095](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.19.1252.8edebc9...2025.11.25.1459.f66d095)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#247) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update vitest monorepo to v4.0.14 (#246) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#245) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#244) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update vitest monorepo to v4.0.13 (#243) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.7 (#242) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/checkout action to v6 (#241) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.2.7 (#238) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update vitest monorepo to v4.0.12 (#239) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.11.19.1252.8edebc9](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.11.1940.d62f1da...2025.11.19.1252.8edebc9)
 
 ### Features
