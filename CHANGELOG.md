@@ -1,5 +1,13 @@
 # Changelog
 
+## [2025.12.08.1324.cc0390a](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.12.02.1215.24622f9...2025.12.08.1324.cc0390a)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#255) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update alpine docker tag to v3.23 (#254) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update vitest monorepo to v4.0.15 (#253) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.12.02.1215.24622f9](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.11.25.1459.f66d095...2025.12.02.1215.24622f9)
 
 ### Dependencies
