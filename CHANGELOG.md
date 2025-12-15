@@ -1,5 +1,13 @@
 # Changelog
 
+## [2025.12.15.1252.69cb65a](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.12.08.1324.cc0390a...2025.12.15.1252.69cb65a)
+
+### Dependencies
+
+* chore(deps): update node.js to v24.12.0 (#257) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#259) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update github artifact actions (major) (#258) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.12.08.1324.cc0390a](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.12.02.1215.24622f9...2025.12.08.1324.cc0390a)
 
 ### Dependencies
