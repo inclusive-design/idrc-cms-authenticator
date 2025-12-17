@@ -7,7 +7,7 @@
 # being installed and ideally fewer vulnerabilities reports.
 
 # Build stage
-FROM node:24.12.0-alpine3.22 AS builder
+FROM dhi.io/node:24-alpine3.22 AS builder
 
 WORKDIR /build-stage
 
@@ -27,7 +27,7 @@ RUN apk upgrade --no-cache && \
 COPY . ./
 
 # Runtime stage without npm
-FROM alpine:3.23
+FROM dhi.io/alpine-base:3.22
 
 WORKDIR /usr/src/app
 
