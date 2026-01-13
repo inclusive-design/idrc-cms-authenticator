@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.01.13.1151.89c3840](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.06.1244.c43d0cf...2026.01.13.1151.89c3840)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#274) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update vitest monorepo to v4.0.17 (#273) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#271) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.01.06.1244.c43d0cf](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2025.12.16.1623.fda8edf...2026.01.06.1244.c43d0cf)
 
 ### Dependencies
