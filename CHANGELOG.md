@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.01.14.2209.54d8a45](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.13.1151.89c3840...2026.01.14.2209.54d8a45)
+
+### Chores
+
+* chore: bump node image version due to cve (#276) [@avtar-idrc](https://github.com/avtar-idrc)
+
 ## [2026.01.13.1151.89c3840](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.06.1244.c43d0cf...2026.01.13.1151.89c3840)
 
 ### Dependencies
