@@ -103,32 +103,45 @@ jobs:
     permissions:
       id-token: write
       contents: read
+      packages: write
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.2
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v5
+        uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
           role-to-assume: ${{ secrets.IAM_ROLE_FOR_ECS }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v2
+        uses: aws-actions/amazon-ecr-login@v2.0.1
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3.6.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-        with:
-          install: true
+        id: builder
+        uses: docker/setup-buildx-action@v3.12.0
 
       - name: Build and push Docker image to Amazon ECR
         uses: docker/build-push-action@v6
+
         with:
           context: .
           push: true
+          sbom: true
+          builder: ${{ steps.builder.outputs.name }}
+          platforms: linux/amd64
           tags: |
             ${{ steps.login-ecr.outputs.registry }}/auth-incd-ca:${{ github.sha }}
             ${{ steps.login-ecr.outputs.registry }}/auth-incd-ca:latest
+            ghcr.io/${{ github.repository_owner }}/auth-incd-ca:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/auth-incd-ca:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
