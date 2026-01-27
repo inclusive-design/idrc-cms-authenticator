@@ -21,7 +21,6 @@ jobs:
         run: |
           npm ci
           npm run lint
-          npm run format
           npm run test
       - name: Save code coverage to artifact
         uses: actions/upload-artifact@v6
