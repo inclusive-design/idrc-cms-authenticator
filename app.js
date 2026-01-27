@@ -1,20 +1,21 @@
-import cookieParser from "cookie-parser";
-import dotenv from "dotenv";
-import express from "express";
-import middleware from "./middleware/index.js";
+import {env} from 'node:process';
+import cookieParser from 'cookie-parser';
+import dotenv from 'dotenv';
+import express from 'express';
+import middleware from './middleware/index.js';
 
-dotenv.config({ silent: true });
+dotenv.config({silent: true});
 
-const port = process.env.PORT || 3000;
+const port = env.PORT || 3000;
 
 const app = express();
 app.use(cookieParser());
 
-app.get("/", (_req, res) => {
-	res.status(404).send();
+app.get('/', (_request, response) => {
+	response.status(404).send();
 });
 
-app.get("/auth", middleware.auth);
-app.get("/callback", middleware.callback);
+app.get('/auth', middleware.auth);
+app.get('/callback', middleware.callback);
 
 app.listen(port);

@@ -1,43 +1,52 @@
 {
-	"name": "idrc-cms-authenticator",
-	"engines": {
-		"node": ">=23"
-	},
-	"type": "module",
-	"description": "GitHub and GitLab OAuth client for Sveltia CMS and Decap CMS",
-	"repository": "https://github.com/inclusive-design/idrc-cms-authenticator",
-	"main": "index.js",
-	"scripts": {
-		"start": "node app.js",
-		"format": "biome format --write .",
-		"lint": "biome lint --write .",
-		"test": "vitest run --coverage"
-	},
-	"keywords": [
-		"decap-cms",
-		"sveltia-cms",
-		"github",
-		"gitlab",
-		"auth"
-	],
-	"author": "OCAD University <idrc@ocadu.ca>",
-	"license": "BSD-3-Clause",
-	"dependencies": {
-		"cookie-parser": "^1.4.6",
-		"dotenv": "^17.0.0",
-		"express": "^5.0.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.0.0",
-		"@vitest/coverage-v8": "^4.0.10",
-		"husky": "^9.0.11",
-		"lint-staged": "^16.0.0",
-		"supertest": "^7.2.2",
-		"vitest": "^4.0.10"
-	},
-	"lint-staged": {
-		"*.{js,json}": [
-			"biome check --write --no-errors-on-unmatched"
-		]
-	}
+  "name": "idrc-cms-authenticator",
+  "engines": {
+    "node": ">=23"
+  },
+  "type": "module",
+  "description": "GitHub and GitLab OAuth client for Sveltia CMS and Decap CMS",
+  "repository": "https://github.com/inclusive-design/idrc-cms-authenticator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "run-s -l lint:*",
+    "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
+    "lint:eslint": "eslint",
+    "test": "vitest run --coverage"
+  },
+  "keywords": [
+    "decap-cms",
+    "sveltia-cms",
+    "github",
+    "gitlab",
+    "auth"
+  ],
+  "author": "OCAD University <idrc@ocadu.ca>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^17.0.0",
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@inclusive-design/eslint-config": "^0.2.0",
+    "@inclusive-design/markdownlint-config": "^0.1.0",
+    "@vitest/coverage-v8": "^4.0.10",
+    "husky": "^9.0.11",
+    "lint-staged": "^16.0.0",
+    "npm-run-all2": "^8.0.4",
+    "supertest": "^7.2.2",
+    "vitest": "^4.0.10"
+  },
+  "lint-staged": {
+    "*.{cjs,js,json,mjs}": [
+      "eslint --fix"
+    ],
+    "*.md": [
+      "eslint --fix",
+      "markdownlint-cli2 --fix"
+    ]
+  }
 }
