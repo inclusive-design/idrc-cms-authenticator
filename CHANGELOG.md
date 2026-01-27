@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.01.27.2008.59fd6b8](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.27.2003.e772dd2...2026.01.27.2008.59fd6b8)
+
+### Features
+
+* feat: add GitHub Container Registry support (#284) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.01.27.2003.e772dd2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.26.1527.8f5cc4a...2026.01.27.2003.e772dd2)
 
 * chore(deps): use [@inclusive-design](https://github.com/inclusive-design) linters (#282) [@nedatidrc](https://github.com/nedatidrc)
