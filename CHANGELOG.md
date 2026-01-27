@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.01.26.1527.8f5cc4a](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.14.2209.54d8a45...2026.01.26.1527.8f5cc4a)
+
+### Dependencies
+
+* chore(deps): update dependency [@biomejs](https://github.com/biomejs)/biome to v2.3.13 (#280) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#281) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update vitest monorepo to v4.0.18 (#278) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.01.14.2209.54d8a45](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.13.1151.89c3840...2026.01.14.2209.54d8a45)
 
 ### Chores
