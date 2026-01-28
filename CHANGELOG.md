@@ -1,5 +1,14 @@
 # Changelog
 
+## [2026.01.28.1351.9ca3315](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.27.2008.59fd6b8...2026.01.28.1351.9ca3315)
+
+* ci: resolve buildx deprecation (#287) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#289) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update docker/login-action action to v3.7.0 (#286) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.01.27.2008.59fd6b8](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.27.2003.e772dd2...2026.01.27.2008.59fd6b8)
 
 ### Features
