@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.01.28.1858.a33d718](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.28.1351.9ca3315...2026.01.28.1858.a33d718)
+
+### Bug Fixes
+
+* fix: resolve issue with token response (#290) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.01.28.1351.9ca3315](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.27.2008.59fd6b8...2026.01.28.1351.9ca3315)
 
 * ci: resolve buildx deprecation (#287) [@nedatidrc](https://github.com/nedatidrc)
