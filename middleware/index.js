@@ -222,8 +222,8 @@ const callbackMiddleware = async (request, response) => {
 			body: JSON.stringify(requestBody),
 		});
 	} catch {
-		tokenResponse.set(defaultHeaders);
-		tokenResponse.send(htmlResponse({
+		response.set(defaultHeaders);
+		response.send(htmlResponse({
 			provider,
 			error: 'Failed to request an access token. Please try again later.',
 			errorCode: 'TOKEN_REQUEST_FAILED',
@@ -234,8 +234,8 @@ const callbackMiddleware = async (request, response) => {
 	try {
 		({access_token: token, error} = await tokenResponse.json());
 	} catch {
-		tokenResponse.set(defaultHeaders);
-		tokenResponse.send(htmlResponse({
+		response.set(defaultHeaders);
+		response.send(htmlResponse({
 			provider,
 			error:
 						'Server responded with malformed data. Please try again later.',
@@ -244,8 +244,8 @@ const callbackMiddleware = async (request, response) => {
 		return;
 	}
 
-	tokenResponse.set(defaultHeaders);
-	tokenResponse.send(htmlResponse({provider, token, error}));
+	response.set(defaultHeaders);
+	response.send(htmlResponse({provider, token, error}));
 };
 
 export default {
