@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.02.02.1257.1cc137c](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.28.1858.a33d718...2026.02.02.1257.1cc137c)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#294) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.4.0 (#292) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.01.28.1858.a33d718](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.28.1351.9ca3315...2026.01.28.1858.a33d718)
 
 ### Bug Fixes
