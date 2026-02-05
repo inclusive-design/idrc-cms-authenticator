@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.02.05.1510.809e405](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.02.02.1257.1cc137c...2026.02.05.1510.809e405)
+
+### Features
+
+* feat: set up nix and pnpm (#298) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#299) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.4.1 (#295) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update aws-actions/configure-aws-credentials action to v6 (#296) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.02.02.1257.1cc137c](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.01.28.1858.a33d718...2026.02.02.1257.1cc137c)
 
 ### Dependencies
