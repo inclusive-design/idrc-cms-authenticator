@@ -9,9 +9,23 @@
 # Build stage
 FROM node:24.13.0-alpine3.23 AS builder
 
+RUN corepack enable
+
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+
 WORKDIR /build-stage
 
-COPY package*.json ./
+COPY pnpm-lock.yaml ./
+COPY pnpm-workspace.yaml ./
+
+RUN --mount=type=cache,target=/pnpm/store \
+    pnpm fetch
+
+COPY package.json ./
+
+RUN --mount=type=cache,target=/pnpm/store \
+    pnpm install --frozen-lockfile --offline
 
 ARG CACHE_BUST=1
 
@@ -21,10 +35,12 @@ ARG CACHE_BUST=1
 # Pass the following 'docker build' argument to invalidate layer caching and force this step to
 # always run: --build-arg CACHE_BUST=$(date +%s)
 RUN apk upgrade --no-cache && \
-    echo "Cache bust: $CACHE_BUST" && \
-    npm ci --omit=dev
+    echo "Cache bust: $CACHE_BUST"
 
-COPY . ./
+RUN --mount=type=cache,target=/pnpm/store \
+    pnpm install --frozen-lockfile --prod --offline
+
+COPY . .
 
 # Runtime stage without npm
 FROM alpine:3.23

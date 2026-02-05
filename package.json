@@ -1,7 +1,7 @@
 {
   "name": "idrc-cms-authenticator",
   "engines": {
-    "node": ">=23"
+    "node": ">=24"
   },
   "type": "module",
   "description": "GitHub and GitLab OAuth client for Sveltia CMS and Decap CMS",
