@@ -7,6 +7,9 @@
     "nix",
     "npm"
   ],
+  "nix": {
+    "enabled": true
+  },
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true
