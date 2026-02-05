@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v6.0.0
         with:
           name: code-coverage
-          path: coverage/lcov.info
+          path: coverage/clover.xml
           retention-days: 5
 
   upload-coverage:
