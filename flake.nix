@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -10,6 +10,7 @@
         pkgs = import nixpkgs {
           inherit system;
         };
+
       in
       {
         devShells.default = pkgs.mkShell {
