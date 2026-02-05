@@ -3,8 +3,10 @@ import eslintConfigInclusiveDesign from '@inclusive-design/eslint-config';
 
 export default defineConfig([
 	{
+		ignores: ['coverage/*.js', 'README.md'],
+	},
+	{
 		extends: [eslintConfigInclusiveDesign],
-		ignores: ['coverage/**', 'README.md'],
 		rules: {
 			camelcase: ['error', {properties: 'never'}],
 		},
