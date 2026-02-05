@@ -38,8 +38,8 @@ you'll also need to set `GIT_HOSTNAME` to the hostname of your server.
 
 ### Serving locally
 
-1. Install the required packages: `npm install`
-2. Run the application: `npm start`
+1. Install the required packages: `pnpm install`
+2. Run the application: `pnpm start`
 
 The application will be available at <http://localhost:3000>.
 
