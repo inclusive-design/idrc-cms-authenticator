@@ -19,7 +19,7 @@ jobs:
         - name: Install dependencies and lint files
           run: |
             npm ci
-            npm lint
+            npm run lint
             npm test
         - name: Test commit linting
           if: ${{ hashFiles('commitlint.config.js') != '' }}
