@@ -34,10 +34,8 @@
     "@inclusive-design/eslint-config": "^0.2.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
     "@vitest/coverage-v8": "^4.0.10",
-    "eslint": "^9.39.2",
     "husky": "^9.0.11",
     "lint-staged": "^16.0.0",
-    "markdownlint-cli2": "^0.20.0",
     "npm-run-all2": "^8.0.4",
     "supertest": "^7.2.2",
     "vitest": "^4.0.10"
