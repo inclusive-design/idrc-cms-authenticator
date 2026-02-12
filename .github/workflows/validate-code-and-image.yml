@@ -51,8 +51,7 @@ jobs:
     timeout-minutes: 5
     runs-on: ubuntu-latest
     needs:
-      - lint
-      - test
+      - lint-and-test
       - upload-coverage
     steps:
       - name: Checkout repo
