@@ -34,7 +34,7 @@ jobs:
 
   upload-coverage:
     runs-on: ubuntu-latest
-    needs: test
+    needs: lint-and-test
     steps:
       - uses: actions/checkout@v6.0.2
       - name: Fetch code coverage artifact
