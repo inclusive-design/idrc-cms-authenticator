@@ -7,7 +7,7 @@
 # being installed and ideally fewer vulnerabilities reports.
 
 # Build stage
-FROM node:24.13.0-alpine3.23 AS builder
+FROM node:24.13.1-alpine3.23 AS builder
 
 WORKDIR /build-stage
 
