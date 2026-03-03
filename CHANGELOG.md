@@ -1,5 +1,14 @@
 # Changelog
 
+## [2026.03.03.1710.0aba9e2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.02.23.1229.f7d0af9...2026.03.03.1710.0aba9e2)
+
+### Dependencies
+
+* chore(deps): update dependency lint-staged to v16.3.1 (#314) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#313) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update node.js to v24.14.0 (#312) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update github artifact actions (major) (#310) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.02.23.1229.f7d0af9](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.02.17.1253.338339f...2026.02.23.1229.f7d0af9)
 
 ### Dependencies
