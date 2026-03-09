@@ -59,7 +59,7 @@ jobs:
 
       - name: Set up Docker Buildx
         id: builder
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       # This repository's Dockerfile uses $CACHE_BUST to invalidate Docker layer caching. The
       # variable is passed to the Docker build action below.
