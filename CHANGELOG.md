@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026.03.09.1147.9670d4b](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.03.1710.0aba9e2...2026.03.09.1147.9670d4b)
+
+### Dependencies
+
+* chore(deps): update docker/setup-buildx-action action to v4 (#318) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#322) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update docker/build-push-action action to v7 (#321) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/setup-node action to v6.3.0 (#317) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update docker/login-action action to v4 (#315) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.03.1710.0aba9e2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.02.23.1229.f7d0af9...2026.03.03.1710.0aba9e2)
 
 ### Dependencies
