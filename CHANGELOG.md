@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.03.13.1317.2ad419e](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.09.1147.9670d4b...2026.03.13.1317.2ad419e)
+
+### Dependencies
+
+* chore(deps): update dependency lint-staged to v16.3.3 (#320) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.09.1147.9670d4b](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.03.1710.0aba9e2...2026.03.09.1147.9670d4b)
 
 ### Dependencies
