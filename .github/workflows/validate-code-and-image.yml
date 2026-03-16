@@ -38,7 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.2
       - name: Fetch code coverage artifact
-        uses: actions/download-artifact@v8.0.0
+        uses: actions/download-artifact@v8.0.1
         with:
           name: code-coverage
       - name: Upload coverage to Codecov
