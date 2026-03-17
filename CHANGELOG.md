@@ -1,5 +1,16 @@
 # Changelog
 
+## [2026.03.16.1112.fea71c7](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.09.1147.9670d4b...2026.03.16.1112.fea71c7)
+
+* chore(deps): update actions/download-artifact action to v8.0.1 (#324) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update aws-actions/amazon-ecr-login action to v2.0.2 (#327) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Dependencies
+
+* chore(deps): update actions/create-github-app-token action to v3 (#325) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#328) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.3.3 (#320) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.09.1147.9670d4b](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.03.1710.0aba9e2...2026.03.09.1147.9670d4b)
 
 ### Dependencies
