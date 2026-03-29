@@ -1,5 +1,14 @@
 # Changelog
 
+## [2026.03.29.1414.802f63e](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.23.1216.943df68...2026.03.29.1414.802f63e)
+
+### Dependencies
+
+* chore(deps): update node.js to v24.14.1 (#340) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update codecov/codecov-action action to v5.5.4 (#341) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#342) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update aws-actions/amazon-ecr-login action to v2.1.1 (#338) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.23.1216.943df68](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.16.1112.fea71c7...2026.03.23.1216.943df68)
 
 * chore(deps): update codecov/codecov-action action to v5.5.3 (#331) @[renovate[bot]](https://github.com/apps/renovate)
