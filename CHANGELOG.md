@@ -1,5 +1,16 @@
 # Changelog
 
+## [2026.03.31.1756.34e560b](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.29.1414.802f63e...2026.03.31.1756.34e560b)
+
+### Features
+
+* feat: remove AWS ECR publishing step for releases (#343) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): update codecov/codecov-action action to v6 (#337) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#344) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.29.1414.802f63e](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.23.1216.943df68...2026.03.29.1414.802f63e)
 
 ### Dependencies
