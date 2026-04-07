@@ -31,7 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.0.0",
     "@commitlint/config-conventional": "^20.0.0",
-    "@inclusive-design/eslint-config": "^0.2.0",
+    "@inclusive-design/eslint-config": "^0.3.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
     "@vitest/coverage-v8": "^4.0.10",
     "husky": "^9.0.11",

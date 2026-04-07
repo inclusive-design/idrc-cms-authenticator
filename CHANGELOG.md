@@ -1,5 +1,35 @@
 # Changelog
 
+## [2026.03.31.1756.34e560b](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.29.1414.802f63e...2026.03.31.1756.34e560b)
+
+### Features
+
+* feat: remove AWS ECR publishing step for releases (#343) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): update codecov/codecov-action action to v6 (#337) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#344) @[renovate[bot]](https://github.com/apps/renovate)
+
+## [2026.03.29.1414.802f63e](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.23.1216.943df68...2026.03.29.1414.802f63e)
+
+### Dependencies
+
+* chore(deps): update node.js to v24.14.1 (#340) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update codecov/codecov-action action to v5.5.4 (#341) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#342) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update aws-actions/amazon-ecr-login action to v2.1.1 (#338) @[renovate[bot]](https://github.com/apps/renovate)
+
+## [2026.03.23.1216.943df68](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.16.1112.fea71c7...2026.03.23.1216.943df68)
+
+* chore(deps): update codecov/codecov-action action to v5.5.3 (#331) @[renovate[bot]](https://github.com/apps/renovate)
+
+### Dependencies
+
+* chore(deps): update dependency [@inclusive-design](https://github.com/inclusive-design)/eslint-config to ^0.3.0 (#330) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#333) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update aws-actions/amazon-ecr-login action to v2.1.0 (#332) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.16.1112.fea71c7](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.09.1147.9670d4b...2026.03.16.1112.fea71c7)
 
 * chore(deps): update actions/download-artifact action to v8.0.1 (#324) @[renovate[bot]](https://github.com/apps/renovate)

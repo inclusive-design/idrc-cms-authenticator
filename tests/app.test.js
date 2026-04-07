@@ -24,7 +24,7 @@ test('auth route fails without valid provider', async () => {
 		.send();
 
 	assert.isFalse(response.redirect);
-	expect(response.text).toMatch(/UNSUPPORTED_BACKEND/);
+	expect(response.text).toMatch(/UNSUPPORTED_BACKEND/v);
 });
 
 test('auth route fails without valid domain', async () => {
@@ -38,7 +38,7 @@ test('auth route fails without valid domain', async () => {
 		.get('/auth?provider=github&site_id=example.test')
 		.send();
 	assert.isFalse(response.redirect);
-	expect(response.text).toMatch(/UNSUPPORTED_DOMAIN/);
+	expect(response.text).toMatch(/UNSUPPORTED_DOMAIN/v);
 });
 
 test('auth route fails without client ID', async () => {
@@ -55,7 +55,7 @@ test('auth route fails without client ID', async () => {
 		.get('/auth?provider=github&site_id=example.com')
 		.send();
 	assert.isFalse(response.redirect);
-	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/);
+	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/v);
 	onTestFinished(() => {
 		process.env.OAUTH_CLIENT_ID = clientId;
 	});
@@ -75,7 +75,7 @@ test('auth route fails without client secret', async () => {
 		.get('/auth?provider=github&site_id=example.com')
 		.send();
 	assert.isFalse(response.redirect);
-	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/);
+	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/v);
 	onTestFinished(() => {
 		process.env.OAUTH_CLIENT_SECRET = clientSecret;
 	});
@@ -129,7 +129,7 @@ test('callback route fails without valid provider', async () => {
 		.get(`/callback?code=123456789&state=${state}`)
 		.send();
 
-	expect(response.text).toMatch(/UNSUPPORTED_BACKEND/);
+	expect(response.text).toMatch(/UNSUPPORTED_BACKEND/v);
 });
 
 test('callback route fails without code', async () => {
@@ -146,7 +146,7 @@ test('callback route fails without code', async () => {
 		.set('Cookie', [`csrf-token=github_${state}`])
 		.send();
 
-	expect(response.text).toMatch(/AUTH_CODE_REQUEST_FAILED/);
+	expect(response.text).toMatch(/AUTH_CODE_REQUEST_FAILED/v);
 });
 
 test('callback route fails without CSRF token', async () => {
@@ -163,7 +163,7 @@ test('callback route fails without CSRF token', async () => {
 		.set('Cookie', [`csrf-token=github_${state}`])
 		.send();
 
-	expect(response.text).toMatch(/AUTH_CODE_REQUEST_FAILED/);
+	expect(response.text).toMatch(/AUTH_CODE_REQUEST_FAILED/v);
 });
 
 test('callback route fails with CSRF mismatch', async () => {
@@ -181,7 +181,7 @@ test('callback route fails with CSRF mismatch', async () => {
 		.set('Cookie', [`csrf-token=github_${state}`])
 		.send();
 
-	expect(response.text).toMatch(/CSRF_DETECTED/);
+	expect(response.text).toMatch(/CSRF_DETECTED/v);
 });
 
 test('callback route fails without client ID', async () => {
@@ -201,7 +201,7 @@ test('callback route fails without client ID', async () => {
 		.set('Cookie', [`csrf-token=github_${state}`])
 		.send();
 
-	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/);
+	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/v);
 
 	onTestFinished(() => {
 		process.env.OAUTH_CLIENT_ID = clientId;
@@ -225,7 +225,7 @@ test('callback route fails without client secret', async () => {
 		.set('Cookie', [`csrf-token=github_${state}`])
 		.send();
 
-	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/);
+	expect(response.text).toMatch(/MISCONFIGURED_CLIENT/v);
 
 	onTestFinished(() => {
 		process.env.OAUTH_CLIENT_SECRET = clientSecret;

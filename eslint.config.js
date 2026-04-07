@@ -9,6 +9,7 @@ export default defineConfig([
 		extends: [eslintConfigInclusiveDesign],
 		rules: {
 			camelcase: ['error', {properties: 'never'}],
+			'require-unicode-regexp': 'off',
 		},
 	},
 ]);
