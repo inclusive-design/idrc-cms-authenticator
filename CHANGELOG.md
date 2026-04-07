@@ -1,5 +1,14 @@
 # Changelog
 
+## [2026.04.07.1137.8c4e458](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.31.1756.34e560b...2026.04.07.1137.8c4e458)
+
+* chore(deps): fix vulnerabilities (#350) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#348) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update docker/login-action action to v4.1.0 (#347) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.03.31.1756.34e560b](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.03.29.1414.802f63e...2026.03.31.1756.34e560b)
 
 ### Features
