@@ -26,7 +26,7 @@ jobs:
           run: |
             echo 'fix: make sure commitlint works' | npx commitlint
         - name: Save code coverage to artifact
-          uses: actions/upload-artifact@v7.0.0
+          uses: actions/upload-artifact@v7.0.1
           with:
             name: code-coverage
             path: coverage/clover.xml
