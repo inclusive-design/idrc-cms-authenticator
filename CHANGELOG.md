@@ -1,5 +1,14 @@
 # Changelog
 
+## [2026.04.14.1147.493dfec](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.04.10.1415.d5ef688...2026.04.14.1147.493dfec)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#358) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/create-github-app-token action to v3.1.1 (#355) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#356) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/upload-artifact action to v7.0.1 (#354) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.04.10.1415.d5ef688](https://github.com/inclusive-design/idrc-cms-authenticator/compare/2026.04.07.1137.8c4e458...2026.04.10.1415.d5ef688)
 
 ### Dependencies
