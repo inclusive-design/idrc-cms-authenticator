@@ -7,6 +7,7 @@
   "description": "GitHub and GitLab OAuth client for Sveltia CMS and Decap CMS",
   "repository": "https://github.com/inclusive-design/idrc-cms-authenticator",
   "main": "index.js",
+  "version": "2026.4.3",
   "scripts": {
     "start": "node app.js",
     "lint": "run-s -l lint:*",
