@@ -71,7 +71,7 @@ jobs:
       # is a workaround because Compose does not support BuildKit/buildx, which is required for
       # GHA caching.
       - name: Build Docker image
-        uses: docker/build-push-action@v7.0.0
+        uses: docker/build-push-action@v7.1.0
         with:
           context: .
           tags: idrc-cms-authenticator
