@@ -55,7 +55,7 @@ jobs:
       - upload-coverage
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.2
 
       - name: Set up Docker Buildx
         id: builder
