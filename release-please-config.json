@@ -1,6 +1,7 @@
 {
 	"changelog-path": "CHANGELOG.md",
 	"release-type": "node",
+	"always-bump-patch": true,
 	"bump-minor-pre-major": false,
 	"bump-patch-for-minor-pre-major": false,
 	"draft": false,
