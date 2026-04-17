@@ -18,7 +18,8 @@
       ],
       "matchCurrentVersion": "!/^0/",
       "minimumReleaseAge": "2 days",
-      "automerge": true
+      "automerge": true,
+      "semanticCommitType": "deps"
     }
   ]
 }
