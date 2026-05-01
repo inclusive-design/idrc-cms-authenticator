@@ -1,4 +1,5 @@
 import process from 'node:process';
+import {randomUUID} from 'node:crypto';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import express from 'express';
@@ -7,8 +8,6 @@ import {
 	assert, expect, onTestFinished, test,
 } from 'vitest';
 import middleware from '../middleware/index.js';
-
-import {randomUUID} from 'node:crypto';
 
 dotenv.config({path: '.env.test', silent: true});
 
@@ -93,7 +92,7 @@ test('GitHub auth route succeeds with valid provider and site id', async () => {
 		.send();
 
 	assert.isTrue(response.redirect);
-	expect(response.header.location).toMatch(/https:\/\/github.com\/login\/oauth\/authorize\?client_id=client-id&scope=repo%2Cuser&state=[a-zA-Z0-9_-]+/);
+	expect(response.header.location).toMatch(/https:\/\/github.com\/login\/oauth\/authorize\?client_id=client-id&scope=repo%2Cuser&state=[\w-]+/);
 });
 
 test('GitLab auth route succeeds with valid provider and site id', async () => {
@@ -110,7 +109,7 @@ test('GitLab auth route succeeds with valid provider and site id', async () => {
 
 	assert.isTrue(response.redirect);
 	expect(response.header.location)
-		.toMatch(/https:\/\/gitlab.com\/oauth\/authorize\?client_id=client-id&redirect_uri=http%3A%2F%2F127\.0\.0\.1%2Fcallback&response_type=code&scope=api&state=[a-zA-Z0-9_-]+/);
+		.toMatch(/https:\/\/gitlab.com\/oauth\/authorize\?client_id=client-id&redirect_uri=http%3A%2F%2F127\.0\.0\.1%2Fcallback&response_type=code&scope=api&state=[\w-]+/);
 	onTestFinished(() => {
 		process.env.GIT_HOSTNAME = 'github.com';
 	});
