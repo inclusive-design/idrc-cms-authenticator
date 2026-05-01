@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.5.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.4.4...v2026.5.0) (2026-05-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @inclusive-design/eslint-config to ^0.4.0 ([#375](https://github.com/inclusive-design/idrc-cms-authenticator/issues/375)) ([934d77f](https://github.com/inclusive-design/idrc-cms-authenticator/commit/934d77f325f11fa7b86a3a962846d3b4dfb6cbf0))
+
 ## [2026.4.4](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.4.3...v2026.4.4) (2026-04-21)
 
 
