@@ -34,12 +34,13 @@
     "@commitlint/config-conventional": "^20.0.0",
     "@inclusive-design/eslint-config": "^0.4.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
-    "@vitest/coverage-v8": "^4.0.10",
-    "husky": "^9.0.11",
+    "@vitest/coverage-v8": "^4.0.0",
+    "eslint": "^10.0.0",
+    "husky": "^9.0.0",
     "lint-staged": "^16.0.0",
-    "npm-run-all2": "^8.0.4",
-    "supertest": "^7.2.2",
-    "vitest": "^4.0.10"
+    "npm-run-all2": "^8.0.0",
+    "supertest": "^7.0.0",
+    "vitest": "^4.0.0"
   },
   "lint-staged": {
     "*.{cjs,js,json,mjs}": [

@@ -135,7 +135,7 @@ const callbackMiddleware = async (request, response) => {
 	const {code, state} = Object.fromEntries(searchParams);
 
 	const [, provider, csrfToken]
-		= request.cookies['csrf-token']?.match(/([a-z-]+?)_([0-9a-f]{32})/) ?? [];
+		= request.cookies['csrf-token']?.match(/([a-z-]+?)_([\da-f]{32})/) ?? [];
 
 	if (!provider || !supportedProviders.has(provider)) {
 		response.set(defaultHeaders);
