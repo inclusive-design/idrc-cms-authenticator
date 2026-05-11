@@ -1,5 +1,5 @@
 import process from 'node:process';
-import {randomUUID} from 'node:crypto';
+import { randomUUID } from 'node:crypto';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import express from 'express';
@@ -9,7 +9,7 @@ import {
 } from 'vitest';
 import middleware from '../middleware/index.js';
 
-dotenv.config({path: '.env.test', silent: true});
+dotenv.config({ path: '.env.test', silent: true });
 
 test('auth route fails without valid provider', async () => {
 	const app = express();
