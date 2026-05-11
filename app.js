@@ -1,10 +1,10 @@
-import {env} from 'node:process';
+import { env } from 'node:process';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import express from 'express';
 import middleware from './middleware/index.js';
 
-dotenv.config({silent: true});
+dotenv.config({ silent: true });
 
 const port = env.PORT || 3000;
 

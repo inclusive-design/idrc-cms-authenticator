@@ -1,5 +1,5 @@
-import {env} from 'node:process';
-import {randomUUID} from 'node:crypto';
+import { env } from 'node:process';
+import { randomUUID } from 'node:crypto';
 
 /**
  * List of supported OAuth providers.
@@ -22,11 +22,11 @@ const defaultHeaders = {
  * @returns {string} Escaped string.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions#escaping
  */
-const escapeRegExp = string_ => string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+const escapeRegExp = (string_) => string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 
-const htmlResponse = ({provider = 'unknown', token, error, errorCode}) => {
+const htmlResponse = ({ provider = 'unknown', token, error, errorCode }) => {
 	const state = error ? 'error' : 'success';
-	const content = error ? {provider, error, errorCode} : {provider, token};
+	const content = error ? { provider, error, errorCode } : { provider, token };
 
 	return `
 		<!doctype html><html><body><script>
@@ -46,9 +46,9 @@ const htmlResponse = ({provider = 'unknown', token, error, errorCode}) => {
 };
 
 const authMiddleware = (request, response) => {
-	const {origin, searchParams} = new URL(`${request.protocol}://${request.hostname}${request.originalUrl}`);
+	const { origin, searchParams } = new URL(`${request.protocol}://${request.hostname}${request.originalUrl}`);
 
-	const {provider, site_id: domain} = Object.fromEntries(searchParams);
+	const { provider, site_id: domain } = Object.fromEntries(searchParams);
 
 	if (!provider || !supportedProviders.has(provider)) {
 		response.set(defaultHeaders);
@@ -69,7 +69,7 @@ const authMiddleware = (request, response) => {
 	// Check if the domain is whitelisted
 	if (
 		ALLOWED_DOMAINS
-		&& !ALLOWED_DOMAINS.split(/,/).some(string_ =>
+		&& !ALLOWED_DOMAINS.split(/,/).some((string_) =>
 		// Escape the input, then replace a wildcard for regex
 			(domain ?? '').match(new RegExp(`^${escapeRegExp(string_.trim()).replace(String.raw`\*`, '.+')}$`)))
 	) {
@@ -130,9 +130,9 @@ const authMiddleware = (request, response) => {
 };
 
 const callbackMiddleware = async (request, response) => {
-	const {origin, searchParams} = new URL(`${request.protocol}://${request.hostname}${request.originalUrl}`);
+	const { origin, searchParams } = new URL(`${request.protocol}://${request.hostname}${request.originalUrl}`);
 
-	const {code, state} = Object.fromEntries(searchParams);
+	const { code, state } = Object.fromEntries(searchParams);
 
 	const [, provider, csrfToken]
 		= request.cookies['csrf-token']?.match(/([a-z-]+?)_([\da-f]{32})/) ?? [];
@@ -232,7 +232,7 @@ const callbackMiddleware = async (request, response) => {
 	}
 
 	try {
-		({access_token: token, error} = await tokenResponse.json());
+		({ access_token: token, error } = await tokenResponse.json());
 	} catch {
 		response.set(defaultHeaders);
 		response.send(htmlResponse({
@@ -245,7 +245,7 @@ const callbackMiddleware = async (request, response) => {
 	}
 
 	response.set(defaultHeaders);
-	response.send(htmlResponse({provider, token, error}));
+	response.send(htmlResponse({ provider, token, error }));
 };
 
 export default {
