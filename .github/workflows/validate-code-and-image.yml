@@ -84,7 +84,7 @@ jobs:
       - name: Run Docker Compose using built image
         run: docker compose up --detach
 
-      - uses: gacts/install-hurl@4e426ea8f8626b6f9e87f473751d8a0572370ba3 # v1.3.3
+      - uses: gacts/install-hurl@ab6d0234456944b022ef7d1f594845af9561357d # v1.3.4
         with:
           version: 4.0.0
 

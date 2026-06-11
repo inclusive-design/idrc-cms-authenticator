@@ -27,7 +27,7 @@ RUN apk upgrade --no-cache && \
 COPY . ./
 
 # Runtime stage without npm
-FROM alpine:3.23
+FROM alpine:3.24
 
 WORKDIR /usr/src/app
 
