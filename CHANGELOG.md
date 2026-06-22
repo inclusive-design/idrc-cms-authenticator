@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.6.4](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.6.3...v2026.6.4) (2026-06-22)
+
+
+### Bug Fixes
+
+* **deps:** update actions/checkout action to v7 ([#407](https://github.com/inclusive-design/idrc-cms-authenticator/issues/407)) ([f3386d8](https://github.com/inclusive-design/idrc-cms-authenticator/commit/f3386d8bbbbaa5042d1d0488c32b38981ee6935a))
+* **deps:** update dependencies (minor) ([#406](https://github.com/inclusive-design/idrc-cms-authenticator/issues/406)) ([b7712a5](https://github.com/inclusive-design/idrc-cms-authenticator/commit/b7712a5edb8c4691a042b0244cb565ba1a537c5d))
+
 ## [2026.6.3](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.6.2...v2026.6.3) (2026-06-15)
 
 
