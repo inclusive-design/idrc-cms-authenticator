@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.8.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.7.0...v2026.8.0) (2026-08-05)
+
+
+### Miscellaneous Chores
+
+* **deps:** update node.js to v24.19.0 ([#426](https://github.com/inclusive-design/idrc-cms-authenticator/issues/426)) ([120787a](https://github.com/inclusive-design/idrc-cms-authenticator/commit/120787a2e750290ad7ae4e041a7c50f5d8df9438))
+
 ## [2026.7.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.6.5...v2026.7.0) (2026-07-02)
 
 
