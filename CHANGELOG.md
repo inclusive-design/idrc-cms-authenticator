@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.8.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.8.0...v2026.8.1) (2026-08-11)
+
+
+### Continuous Integration
+
+* replace deprecated app-id parameter with client-id ([#429](https://github.com/inclusive-design/idrc-cms-authenticator/issues/429)) ([0120c5c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/0120c5cfac54f50dda15f39d444423e85f6d6cf4))
+
 ## [2026.8.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.7.0...v2026.8.0) (2026-08-05)
 
 
