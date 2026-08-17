@@ -22,7 +22,7 @@ const defaultHeaders = {
  * @returns {string} Escaped string.
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions#escaping
  */
-const escapeRegExp = (string_) => string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+const escapeRegExp = (string_) => string_.replaceAll(/[$()*+.?[\\\]^{|}]/g, String.raw`\$&`);
 
 const htmlResponse = ({ provider = 'unknown', token, error, errorCode }) => {
 	const state = error ? 'error' : 'success';
@@ -69,9 +69,9 @@ const authMiddleware = (request, response) => {
 	// Check if the domain is whitelisted
 	if (
 		ALLOWED_DOMAINS
-		&& !ALLOWED_DOMAINS.split(/,/).some((string_) =>
+		&& ALLOWED_DOMAINS.split(/,/).every((string_) =>
 		// Escape the input, then replace a wildcard for regex
-			(domain ?? '').match(new RegExp(`^${escapeRegExp(string_.trim()).replace(String.raw`\*`, '.+')}$`)))
+			!(new RegExp(`^${escapeRegExp(string_.trim()).replace(String.raw`\*`, '.+')}$`)).test(domain ?? ''))
 	) {
 		response.set(defaultHeaders);
 		response.send(htmlResponse({
@@ -81,10 +81,6 @@ const authMiddleware = (request, response) => {
 		}));
 		return;
 	}
-
-	// Generate a random string for CSRF protection
-	const csrfToken = randomUUID().replaceAll('-', '');
-	let authURL = '';
 
 	if (!OAUTH_CLIENT_ID || !OAUTH_CLIENT_SECRET) {
 		response.set(defaultHeaders);
@@ -96,8 +92,12 @@ const authMiddleware = (request, response) => {
 		return;
 	}
 
-	// GitHub
+	// Generate a random string for CSRF protection
+	const csrfToken = randomUUID().replaceAll('-', '');
+	let authURL = '';
+
 	if (provider === 'github') {
+		// GitHub
 		const parameters = new URLSearchParams({
 			client_id: OAUTH_CLIENT_ID,
 			scope: 'repo,user',
@@ -105,10 +105,8 @@ const authMiddleware = (request, response) => {
 		});
 
 		authURL = `https://${GIT_HOSTNAME}/login/oauth/authorize?${parameters.toString()}`;
-	}
-
-	// GitLab
-	if (provider === 'gitlab') {
+	} else if (provider === 'gitlab') {
+		// GitLab
 		const parameters = new URLSearchParams({
 			client_id: OAUTH_CLIENT_ID,
 			redirect_uri: `${origin}/callback`,
@@ -135,7 +133,7 @@ const callbackMiddleware = async (request, response) => {
 	const { code, state } = Object.fromEntries(searchParams);
 
 	const [, provider, csrfToken]
-		= request.cookies['csrf-token']?.match(/([a-z-]+?)_([\da-f]{32})/) ?? [];
+		= request.cookies['csrf-token']?.match(/([-a-z]+)_([\da-f]{32})/) ?? [];
 
 	if (!provider || !supportedProviders.has(provider)) {
 		response.set(defaultHeaders);
@@ -186,18 +184,16 @@ const callbackMiddleware = async (request, response) => {
 	let tokenURL = '';
 	let requestBody = {};
 
-	// GitHub
 	if (provider === 'github') {
+		// GitHub
 		tokenURL = `https://${GIT_HOSTNAME}/login/oauth/access_token`;
 		requestBody = {
 			code,
 			client_id: OAUTH_CLIENT_ID,
 			client_secret: OAUTH_CLIENT_SECRET,
 		};
-	}
-
-	// GitLab
-	if (provider === 'gitlab') {
+	} else if (provider === 'gitlab') {
+		// GitLab
 		tokenURL = `https://${GIT_HOSTNAME}/oauth/token`;
 		requestBody = {
 			code,

@@ -10,6 +10,8 @@ export default defineConfig([
 		rules: {
 			camelcase: ['error', { properties: 'never' }],
 			'require-unicode-regexp': 'off',
+			'regexp/no-super-linear-move': 'off',
+			'regexp/prefer-named-capture-group': 'off',
 		},
 	},
 ]);

@@ -5,7 +5,10 @@ import dotenv from 'dotenv';
 import express from 'express';
 import request from 'supertest';
 import {
-	assert, expect, onTestFinished, test,
+	assert,
+	expect,
+	onTestFinished,
+	test,
 } from 'vitest';
 import middleware from '../middleware/index.js';
 
