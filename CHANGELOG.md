@@ -1,5 +1,18 @@
 # Changelog
 
+## [2026.9.0](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.8.4...v2026.9.0) (2026-09-01)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([#447](https://github.com/inclusive-design/idrc-cms-authenticator/issues/447)) ([10da605](https://github.com/inclusive-design/idrc-cms-authenticator/commit/10da605d75cf432de65a5de64d82aef7e34aa281))
+* **deps:** update dependencies (minor) ([#446](https://github.com/inclusive-design/idrc-cms-authenticator/issues/446)) ([a1aa991](https://github.com/inclusive-design/idrc-cms-authenticator/commit/a1aa991f5b8fb295013bdfd6f831e217f9327dbd))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([535911d](https://github.com/inclusive-design/idrc-cms-authenticator/commit/535911de4805bfa790eb204e2c7c2621441aba0e))
+
 ## [2026.8.4](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.8.3...v2026.8.4) (2026-08-26)
 
 
