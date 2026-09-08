@@ -34,13 +34,13 @@
     "@commitlint/config-conventional": "^21.0.0",
     "@inclusive-design/eslint-config": "^1.0.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
-    "@vitest/coverage-v8": "^4.0.0",
+    "@vitest/coverage-v8": "^5.0.0",
     "eslint": "^10.0.0",
     "husky": "^9.0.0",
     "lint-staged": "^17.0.0",
     "npm-run-all2": "^9.0.0",
     "supertest": "^7.0.0",
-    "vitest": "^4.0.0"
+    "vitest": "^5.0.0"
   },
   "lint-staged": {
     "*.{cjs,js,json,mjs}": [
@@ -50,5 +50,9 @@
       "eslint --fix",
       "markdownlint-cli2 --fix"
     ]
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "unrs-resolver@1.12.2": true
   }
 }
