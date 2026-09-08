@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.9.2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.9.1...v2026.9.2) (2026-09-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lint-staged to v17.5.0 ([#454](https://github.com/inclusive-design/idrc-cms-authenticator/issues/454)) ([5512865](https://github.com/inclusive-design/idrc-cms-authenticator/commit/55128658f97545d037a53a35fdd0893ff1a4d4e2))
+* **deps:** update dependency vitest to v5 ([#452](https://github.com/inclusive-design/idrc-cms-authenticator/issues/452)) ([2a26777](https://github.com/inclusive-design/idrc-cms-authenticator/commit/2a26777515e900b748b3e092859877db5ae91fc9))
+
 ## [2026.9.1](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.9.0...v2026.9.1) (2026-09-03)
 
 
