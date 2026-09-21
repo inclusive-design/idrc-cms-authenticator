@@ -26,7 +26,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "cookie-parser": "^1.4.6",
-    "dotenv": "^17.0.0",
+    "dotenv": "^18.0.0",
     "express": "^5.0.0"
   },
   "devDependencies": {
