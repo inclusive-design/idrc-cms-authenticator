@@ -1,5 +1,16 @@
 # Changelog
 
+## [2026.9.4](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.9.3...v2026.9.4) (2026-09-22)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([#463](https://github.com/inclusive-design/idrc-cms-authenticator/issues/463)) ([2b345e1](https://github.com/inclusive-design/idrc-cms-authenticator/commit/2b345e1125db993070da67ee95070568115fd806))
+* **deps:** update commitlint packages to v21.2.3 ([#464](https://github.com/inclusive-design/idrc-cms-authenticator/issues/464)) ([7181a7c](https://github.com/inclusive-design/idrc-cms-authenticator/commit/7181a7c353ddf3dd04e94330dfbb3aeba26a0747))
+* **deps:** update dependencies (minor) ([#459](https://github.com/inclusive-design/idrc-cms-authenticator/issues/459)) ([056f120](https://github.com/inclusive-design/idrc-cms-authenticator/commit/056f12065d1c4d0b6186988b4c7279551587a391))
+* **deps:** update dependency dotenv to v18 ([#460](https://github.com/inclusive-design/idrc-cms-authenticator/issues/460)) ([e0fdc66](https://github.com/inclusive-design/idrc-cms-authenticator/commit/e0fdc667dbf49475227752ba9f7bd39df554b0bb))
+* **deps:** update dependency dotenv to v18.0.2 ([#462](https://github.com/inclusive-design/idrc-cms-authenticator/issues/462)) ([ecf2618](https://github.com/inclusive-design/idrc-cms-authenticator/commit/ecf2618e11c0fef26a8a1b7f19867abb893cfd54))
+
 ## [2026.9.3](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.9.2...v2026.9.3) (2026-09-14)
 
 
