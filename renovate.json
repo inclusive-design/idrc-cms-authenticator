@@ -34,6 +34,13 @@
         "major"
       ],
       "groupName": null
+    },
+    {
+      "groupName": "Commitlint packages",
+      "groupSlug": "commitlint",
+      "matchPackageNames": [
+        "@commitlint/**"
+      ]
     }
   ]
 }
