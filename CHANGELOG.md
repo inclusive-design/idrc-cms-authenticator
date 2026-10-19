@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.10.3](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.10.2...v2026.10.3) (2026-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (minor) ([6281219](https://github.com/inclusive-design/idrc-cms-authenticator/commit/62812191ace5207ac0bdb82e3cb4325801f6ebc2))
+
 ## [2026.10.2](https://github.com/inclusive-design/idrc-cms-authenticator/compare/v2026.10.1...v2026.10.2) (2026-10-13)
 
 
